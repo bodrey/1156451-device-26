@@ -3,10 +3,98 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <style>
+      .visually-hidden {
+        position: absolute !important;
+        clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+        clip: rect(1px, 1px, 1px, 1px);
+        padding:0 !important;
+        border:0 !important;
+        height: 1px !important;
+        width: 1px !important;
+        overflow: hidden;
+      }
+    </style>
   </head>
   <body>
+    <header>
+      <img src="https://via.placeholder.com/164x36" width="164" height="36" alt="Логотип интернет-магазина &laquo;Девайс&raquo;" />
+<!-- решил разделить header на секцию "Блок товаров" и блок навигации -->
+      <section>
+        <form>
+          <label>
+            <img src="https://via.placeholder.com/16x16" width="16" height="16" alt="Поиск по сайту" />
+            <input type="text" name="search" placeholder="Поиск по сайту"/>
+          </label>
+          <button type="button">Искать</button>
+        </form>
+        <nav>
+<!-- мне не очевидно, нужно ли делать "Каталог товаров" заголовком -->
+          <h2>
+            <a href="#">Каталог товаров</a>
+          </h2>
+          <ul>
+            <li>
+              <a href="#">Виртуальная реальность</a>
+            </li>
+            <li>
+              <a href="#">Моноподы для селфи</a>
+            </li>
+            <li>
+              <a href="#">Экшн-камеры </a>
+            </li>
+            <li>
+              <a href="#">Фитнес-браслеты </a>
+            </li>
+            <li>
+              <a href="#">Умные часы </a>
+            </li>
+            <li>
+              <a href="#">Квадрокоптеры</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <nav>
+        <ul>
+<!-- иконки можно сделать через :before или background, пока не понимаю как лучше -->
+          <img src="https://via.placeholder.com/12x12" width="12" height="12" alt="Иконка пользователя" />
+          <li>
+            <p>Валенитин Петухов</p>
+            <button type="button">Войти</button>
+            <button type="button">Выйти</button>
+          </li>
+        </ul>
+<!-- стоит ли делать здесь три отдельных списка? 1. авторизация, 2. покупки и 3.Навигация по сайту-->
+        <ul>
+          <li>
+            <a href="#">
+              <img src="https://via.placeholder.com/12x12" width="12" height="12" alt="Иконка сравнения" />
+              Сравнить
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="https://via.placeholder.com/12x12" width="12" height="12" alt="Иконка корзины" />
+              Корзина
+            </a>
+          </li>
+        </ul>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+        <ul>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
 
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
   </body>
 </html>
