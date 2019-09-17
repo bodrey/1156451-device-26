@@ -2,18 +2,379 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
+    <title>Девайс Каталог</title>
+    <style>
+      .visually-hidden {
+        position: absolute !important;
+        clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+        clip: rect(1px, 1px, 1px, 1px);
+        padding:0 !important;
+        border:0 !important;
+        height: 1px !important;
+        width: 1px !important;
+        overflow: hidden;
+      }
+    </style>
+
+  <!-- комментарии, повторяющие таковые в index.html, здесь я постарался удалить -->
+
   </head>
   <body>
     <header>
 
+      <img src="https://via.placeholder.com/164x36" width="164" height="36" alt="Логотип интернет-магазина &laquo;Девайс&raquo;" />
+
+      <section>
+<!-- блок поиска -->
+        <form>
+          <label>
+            <img src="https://via.placeholder.com/16x16" width="16" height="16" alt="Поиск по сайту" />
+            <input type="text" name="search" placeholder="Поиск по сайту"/>
+          </label>
+          <button type="button">Искать</button>
+        </form>
+<!-- выпадающее меню, каталог товаров -->
+
+        <nav>
+          <h2>
+            <a href="#">Каталог товаров</a>
+          </h2>
+          <ul>
+            <li>
+              <a href="#">Виртуальная реальность</a>
+            </li>
+            <li>
+              <a href="#">Моноподы для селфи</a>
+            </li>
+            <li>
+              <a href="#">Экшн-камеры </a>
+            </li>
+            <li>
+              <a href="#">Фитнес-браслеты </a>
+            </li>
+            <li>
+              <a href="#">Умные часы </a>
+            </li>
+            <li>
+              <a href="#">Квадрокоптеры</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+
+
+      <section>
+        <ul>
+          <li>
+<!-- авторизация -->
+            <img src="https://via.placeholder.com/12x12" width="12" height="12" alt="Иконка пользователя" />
+            <p>Валенитин Петухов</p>
+            <button type="button">Войти</button>
+            <button type="button">Выйти</button>
+          </li>
+<!-- Покупки -->
+          <li>
+            <a href="#">
+              <img src="https://via.placeholder.com/12x12" width="12" height="12" alt="Иконка сравнения" />
+              Сравнить
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="https://via.placeholder.com/12x12" width="12" height="12" alt="Иконка корзины" />
+              Корзина
+            </a>
+          </li>
+        </ul>
+      </section>
+
+
+
+      <nav>
+<!-- Навигация по сайту -->
+        <ul>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
 
+      <h1>
+        Моноподы для селфи
+      </h1>
+
+
+
+      <ul>
+<!-- breadcrumbs -->
+        <li>
+          <a href="#">
+            Главная
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Каталог товаров
+          </a>
+        </li>
+        <li>
+            Моноподы для селфи
+        </li>
+      </ul>
+
+
+
+      <section>
+<!-- Фильтры -->
+        <h2>
+          Фильтры
+        </h2>
+
+        <form>
+          <h3>
+            Стоимость
+          </h3>
+          <input type="text">
+          <input type="text">
+
+          <h3>
+            Цвет
+          </h3>
+          <ul>
+            <li>
+              <label>
+                <input type="checkbox" checked>
+                Черный
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox">
+                Белый
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" checked>
+                Синий
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" checked>
+                Красный
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox">
+                Розовый
+              </label>
+            </li>
+          </ul>
+
+          <h3>
+            Bluetooth
+          </h3>
+          <ul>
+            <li>
+              <label>
+                <input type="radio" checked>
+                Есть
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" checked>
+                Нет
+              </label>
+            </li>
+          </ul>
+
+          <button type="submit">
+<!-- или нужен type="button"?-->
+            Показать
+          </button>
+        </form>
+      </section>
+
+
+
+      <section>
+<!-- Товары -->
+        <!-- скрытые блоки -->
+        <h2>
+          Товары
+        </h2>
+<!-- Заголовок, для accessibility -->
+        <!-- /скрытые блоки -->
+
+        <div>
+<!-- Сортировка -->
+          <h3>
+            Сортировка:
+          </h3>
+          <ul>
+<!-- Категории -->
+            <li>
+              <button type="button">По цене</button>
+            </li>
+            <li>
+              <button type="button">По типу</button>
+            </li>
+            <li>
+              <button type="button">По популярности</button>
+            </li>
+          </ul>
+
+          <ul>
+<!-- Порядок сортировки-->
+            <li>
+              <button type="button">Прямой порядок</button>
+            </li>
+            <li>
+              <button type="button">Обратный порядок</button>
+            </li>
+          </ul>
+        </div>
+
+
+
+
+
+        <div>
+<!-- pagination -->
+          <!-- скрытые блоки -->
+          <h3>
+            Страницы
+          </h3>
+<!-- Заголовок, для accessibility -->
+          <!-- /скрытые блоки -->
+          <ul>
+            <li>
+              <a href="#">Назад</a>
+            </li>
+            <li>
+              1
+            </li>
+            <li>
+              <a href="#">2</a>
+            </li>
+            <li>
+              <a href="#">3</a>
+            </li>
+            <li>
+              <a href="#">Вперед</a>
+            </li>
+          </ul>
+        </div>
+
+
+      </section>
     </main>
 
     <footer>
+      <img src="https://via.placeholder.com/164x36" width="164" height="36" alt="Логотип интернет-магазина &laquo;Девайс&raquo;" />
+      <!-- та же картинка svg что в header'е, меняем цвет svg-->
+
+
+
+      <section>
+        <ul>
+          <li>
+            <!-- авторизация -->
+            <img src="https://via.placeholder.com/12x12" width="12" height="12" alt="Иконка пользователя" />
+            <p>Валенитин Петухов</p>
+            <button type="button">Войти</button>
+            <button type="button">Выйти</button>
+          </li>
+          <!-- Покупки -->
+          <li>
+            <a href="#">
+              <img src="https://via.placeholder.com/12x12" width="12" height="12" alt="Иконка сравнения" />
+              Сравнить
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="https://via.placeholder.com/12x12" width="12" height="12" alt="Иконка корзины" />
+              Корзина
+            </a>
+          </li>
+        </ul>
+      </section>
+
+
+
+      <!-- скрытые блоки, accessibility -->
+      <h2>
+        <!-- скрытый заголовок, нужен ли он здесь? -->
+        Адрес
+      </h2>
+      <!-- /скрытые блоки -->
+      <p>
+        г. Москва, ул. Строителей, 15 
+      </p>
+
+
+
+      <nav>
+        <!-- Навигация по сайту -->
+        <ul>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+
+
+
+      <!-- скрытые блоки -->
+      <h2>
+        Телефон
+      </h2>
+      <!-- /скрытые блоки -->
+      <!-- скрытые блоки, accessibility -->
+      <p>
+        Тел.: +7 (495) 495-95-95
+      </p>
+
+
+
+      <nav>
+        <!-- скрытые блоки -->
+        <h2>
+          Соц-сети
+        </h2>
+        <!-- /скрытые блоки -->
+        <ul>
+          <li>
+            <!-- VK -->
+            <a href="#">
+              <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="Иконка соцсети" />
+            </a>
+          </li>
+          <li>
+            <!-- Instagram -->
+            <a href="#">
+              <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="Иконка соцсети" />
+            </a>
+          </li>
+          <li>
+            <!-- Twitter -->
+            <a href="#">
+              <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="Иконка соцсети" />
+            </a>
+          </li>
+        </ul>
+
+        <!-- Логотип HTML-Academy, может стать ссылкой -->
+        <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="Логотип HTML-Academy" />
+      </nav>
 
     </footer>
   </body>
