@@ -480,11 +480,21 @@
 
     <section class="modal modal-mail-us">
       <h2 class="visually-hidden">Напишите нам</h2>
-      <form>
-        <label>
-          <p>Ваше имя:</p>
-          <input type="text">
-        </label>
+      <form action="https://echo.htmlacademy.ru" method="get" class="form-mail-us">
+
+        <label for="form-mail-us-name">Ваше имя:</label>
+        <input type="text" name="name" id="form-mail-us-name" placeholder="Имя Фамилия" required>
+
+        <label for="form-mail-us-mail">Ваш e-mail:</label>
+        <input type="text" name="name" id="form-mail-us-mail" placeholder="email@example.com" required>
+
+        <label for="form-mail-us-message-text">Текст письма:</label>
+        <textarea id="form-mail-us-message-text" name="form-mail-us-message-text" rows="" cols="" placeholder="В свободной форме" required>
+        </textarea>
+
+        <button type="submit">
+          Отправить
+        </button>
       </form>
       <button class="modal-close" type="button">
         <span class="visually-hidden">Закрыть</span>
