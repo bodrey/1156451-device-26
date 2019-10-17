@@ -131,66 +131,73 @@
           Фильтры
         </h2>
 
-        <form>
-          <h3>
-            Стоимость
-          </h3>
-          <input type="text">
-          <input type="text">
+        <form action="https://echo.htmlacademy.ru" method="get" class="form-filters">
+          <fieldset>
+            <legend>Стоимость</legend>
 
-          <h3>
-            Цвет
-          </h3>
-          <ul>
-            <li>
-              <label>
-                <input type="checkbox" checked>
-                Черный
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="checkbox">
-                Белый
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="checkbox" checked>
-                Синий
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="checkbox" checked>
-                Красный
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="checkbox">
-                Розовый
-              </label>
-            </li>
-          </ul>
+            <p>
+              <input type="range" id="form-filters-price" name="price"
+                     min="0" max="10">
+              <label for="form-filters-price">0</label>
+            </p>
+          </fieldset>
 
-          <h3>
-            Bluetooth
-          </h3>
-          <ul>
-            <li>
-              <label>
-                <input type="radio" checked>
-                Есть
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="radio" checked>
-                Нет
-              </label>
-            </li>
-          </ul>
+          <fieldset>
+            <legend>Цвет</legend>
+
+            <ul>
+              <li>
+                <input type="checkbox" name="color-black" id="form-filters-color-black" checked>
+                <label for="form-filters-color-black">
+                  Черный
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" name="color-white" id="form-filters-color-white">
+                <label for="form-filters-color-white">
+                  Белый
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" name="color-blue" id="form-filters-color-blue" checked>
+                <label for="form-filters-color-blue">
+                  Синий
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" name="color-red" id="form-filters-color-red" checked>
+                <label for="form-filters-color-red">
+                  Красный
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" name="color-pink" id="form-filters-color-pink">
+                <label for="form-filters-color-pink">
+                  Розовый
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+
+          <fieldset>
+            <legend>Bluetooth</legend>
+
+            <ul>
+              <li>
+                <input type="radio" name="bluetooth" value="have" id="form-filters-bluetooth-have" checked>
+                <label for="form-filters-bluetooth-have">
+                  Есть
+                </label>
+              </li>
+              <li>
+                <input type="radio" name="bluetooth" value="have-not" id="form-filters-bluetooth-have-not">
+                <label for="form-filters-bluetooth-have-not">
+                  Нет
+                </label>
+              </li>
+            </ul>
+          </fieldset>
 
           <button type="submit">
 <!-- или нужен type="button"?-->
@@ -203,9 +210,9 @@
 
       <section>
 <!-- Товары -->
-          <h2 class="visually-hidden">
-            Товары
-          </h2>
+        <h2 class="visually-hidden">
+          Товары
+        </h2>
         <div>
 <!-- Сортировка -->
           <h3>
