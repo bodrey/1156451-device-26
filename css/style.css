@@ -37,11 +37,24 @@ body {
 .page-navigation {}
 
 .header-logo {
-
 }
 
 .header-logo:hover {
+  opacity: 0.6;
 }
+
+.header-logo:active {
+  opacity: 0.3;
+}
+
+/* fix for ie 10 and 11 */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .header-logo img:active {
+    opacity: 0.3;
+  }
+}
+
+
 
 .header-logo {
 
