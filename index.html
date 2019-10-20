@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <style>
+
       .visually-hidden {
         position: absolute !important;
         clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
@@ -16,52 +17,55 @@
         width: 1px !important;
         overflow: hidden;
       }
+
+      .display-none {
+        display: none;
+      }
+
     </style>
   </head>
   <body>
-    <header>
+    <header class="page-header">
+      <nav class="page-navigation">
+        <a class="header-logo" href="">
+          <img src="img/logo.svg" width="164" height="36" alt="Логотип интернет-магазина &laquo;Девайс&raquo;" >
+        </a>
+        <section class="user-menu">
+          <h2 class="visually-hidden">
+            Поиск по сайту
+          </h2>
+          <form class="header-search" method="get" action="https://echo.htmlacademy.ru">
+            <label>
+              <img src="https://via.placeholder.com/16x16" width="16" height="16" alt="Поиск по сайту">
+              <input type="text" name="search" placeholder="Поиск по сайту"/>
+            </label>
+            <button type="button">Искать</button>
+          </form>
 
-      <a href="">
-        <img src="img/logo.svg" width="164" height="36" alt="Логотип интернет-магазина &laquo;Девайс&raquo;" />
-      </a>
+          <div>
+            <p>
+              <a href="#">
+                <!-- авторизация -->
+                <img src="https://via.placeholder.com/12x12" width="12" height="12" alt="Иконка пользователя">
+                <p>Валенитин Петухов</p>
+                <button type="button">Войти</button>
+                <button type="button">Выйти</button>
+              </a>
+            <!-- Покупки -->
+              <a href="#">
+                <img src="https://via.placeholder.com/12x12" width="12" height="12" alt="Иконка сравнения">
+                Сравнить
+              </a>
+              <a href="#">
+                <img src="https://via.placeholder.com/12x12" width="12" height="12" alt="Иконка корзины">
+                Корзина
+              </a>
+            </p>
+          </div>
+        </section>
 
-      <section>
-        <h2 class="visually-hidden">
-          Поиск по сайту
-        </h2>
-        <form method="get" action="https://echo.htmlacademy.ru">
-          <label>
-            <img src="https://via.placeholder.com/16x16" width="16" height="16" alt="Поиск по сайту" />
-            <input type="text" name="search" placeholder="Поиск по сайту"/>
-          </label>
-          <button type="button">Искать</button>
-        </form>
-
-        <div>
-          <p>
-            <a href="#">
-              <!-- авторизация -->
-              <img src="https://via.placeholder.com/12x12" width="12" height="12" alt="Иконка пользователя" />
-              <p>Валенитин Петухов</p>
-              <button type="button">Войти</button>
-              <button type="button">Выйти</button>
-            </a>
-          <!-- Покупки -->
-            <a href="#">
-              <img src="https://via.placeholder.com/12x12" width="12" height="12" alt="Иконка сравнения" />
-              Сравнить
-            </a>
-            <a href="#">
-              <img src="https://via.placeholder.com/12x12" width="12" height="12" alt="Иконка корзины" />
-              Корзина
-            </a>
-          </p>
-        </div>
-      </section>
-
-      <nav>
       <!-- второй блок хэдера, навигация-->
-        <ul>
+        <ul class="site-navigation">
           <!-- выпадающее меню, каталог товаров -->
           <li>
             <h2>
@@ -131,7 +135,7 @@
             <p>
               Делай селфи, как Бен Стиллер!
             </p>
-            <img src="img/slider-1.png" width="384" height="486" alt="Фото товара" />
+            <img src="img/slider-1.png" width="384" height="486" alt="Фото товара">
 
             <p>
             <!-- описание товара -->
@@ -166,7 +170,7 @@
             <p>
               Худеем правильно!
             </p>
-            <img src="img/slider-2.png" width="345" height="485" alt="Фото товара" />
+            <img src="img/slider-2.png" width="345" height="485" alt="Фото товара">
 
             <p>
               Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
@@ -193,7 +197,7 @@
             <p>
               Порхает как бабочка, жалит как пчела!
             </p>
-            <img src="img/slider-3.png" width="526" height="334" alt="Фото товара" />
+            <img src="img/slider-3.png" width="526" height="334" alt="Фото товара">
 
             <p>
               Самая длинная палка для селфи доступна в нашем магазине.Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
@@ -224,37 +228,37 @@
           <li>
             <a href="catalog.html">
             <!-- a {display:block 160x160} фон #F0C52E -->
-              <img src="https://via.placeholder.com/160x160" width="160" height="160" alt="Иконка раздела Виртуальная реальность" />
+              <img src="https://via.placeholder.com/160x160" width="160" height="160" alt="Иконка раздела Виртуальная реальность">
             </a>
             <a href="catalog.html">Виртуальная реальность</a>
           </li>
           <li>
             <a href="catalog.html">
-              <img src="https://via.placeholder.com/160x160" width="160" height="160" alt="Иконка раздела Моноподы для селфи" />
+              <img src="https://via.placeholder.com/160x160" width="160" height="160" alt="Иконка раздела Моноподы для селфи">
             </a>
             <a href="catalog.html">Моноподы для селфи</a>
           </li>
           <li>
             <a href="catalog.html">
-              <img src="https://via.placeholder.com/160x160" width="160" height="160" alt="Иконка раздела Экшн-камеры" />
+              <img src="https://via.placeholder.com/160x160" width="160" height="160" alt="Иконка раздела Экшн-камеры">
             </a>
             <a href="catalog.html">Экшн-камеры</a>
           </li>
           <li>
             <a href="catalog.html">
-              <img src="https://via.placeholder.com/160x160" width="160" height="160" alt="Иконка раздела Фитнес-браслеты" />
+              <img src="https://via.placeholder.com/160x160" width="160" height="160" alt="Иконка раздела Фитнес-браслеты">
             </a>
             <a href="catalog.html">Фитнес-браслеты</a>
           </li>
           <li>
             <a href="catalog.html">
-              <img src="https://via.placeholder.com/160x160" width="160" height="160" alt="Иконка раздела Умные часы" />
+              <img src="https://via.placeholder.com/160x160" width="160" height="160" alt="Иконка раздела Умные часы">
             </a>
             <a href="catalog.html">Умные часы</a>
           </li>
           <li>
             <a href="catalog.html">
-              <img src="https://via.placeholder.com/160x160" width="160" height="160" alt="Иконка раздела Квадрокоптеры" />
+              <img src="https://via.placeholder.com/160x160" width="160" height="160" alt="Иконка раздела Квадрокоптеры">
             </a>
             <a href="catalog.html">Квадрокоптеры</a>
           </li>
@@ -322,22 +326,22 @@
           <li>
           <!-- рамку и размер зададим в <li>, а размер картинки впишем в него-->
             <a>
-              <img src="https://via.placeholder.com/260x100" width="260" height="100" alt="DJI" />
+              <img src="https://via.placeholder.com/260x100" width="260" height="100" alt="DJI">
             </a>
           </li>
           <li>
             <a>
-              <img src="https://via.placeholder.com/260x100" width="260" height="100" alt="SP Gadgets" />
+              <img src="https://via.placeholder.com/260x100" width="260" height="100" alt="SP Gadgets">
             </a>
           </li>
           <li>
             <a>
-              <img src="https://via.placeholder.com/260x100" width="260" height="100" alt="GoPro" />
+              <img src="https://via.placeholder.com/260x100" width="260" height="100" alt="GoPro">
             </a>
           </li>
           <li>
             <a>
-              <img src="https://via.placeholder.com/260x100" width="260" height="100" alt="VIVE" />
+              <img src="https://via.placeholder.com/260x100" width="260" height="100" alt="VIVE">
             </a>
           </li>
         </ul>
@@ -381,7 +385,7 @@
         </h2>
         <div>
 <!-- здесь будет карта -->
-          <img src="img/map.png" width="560" height="222" alt="Карта" />
+          <img src="img/map.png" width="560" height="222" alt="Карта">
         </div>
         <p>
           <a href="#">
@@ -393,24 +397,24 @@
 
     <footer>
       <div>
-        <img src="img/logo-yellow.svg" width="164" height="36" alt="Логотип интернет-магазина &laquo;Девайс&raquo;" />
+        <img src="img/logo-yellow.svg" width="164" height="36" alt="Логотип интернет-магазина &laquo;Девайс&raquo;">
         <section>
           <ul>
             <li>
   <!-- авторизация -->
-              <img src="https://via.placeholder.com/12x12" width="12" height="12" alt="Иконка пользователя" />
+              <img src="https://via.placeholder.com/12x12" width="12" height="12" alt="Иконка пользователя">
               <button type="button">Войти</button>
             </li>
   <!-- Покупки -->
             <li>
               <a href="#">
-                <img src="https://via.placeholder.com/12x12" width="12" height="12" alt="Иконка сравнения" />
+                <img src="https://via.placeholder.com/12x12" width="12" height="12" alt="Иконка сравнения">
                 Сравнить
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="https://via.placeholder.com/12x12" width="12" height="12" alt="Иконка корзины" />
+                <img src="https://via.placeholder.com/12x12" width="12" height="12" alt="Иконка корзины">
                 Корзина
               </a>
             </li>
@@ -456,31 +460,31 @@
             <li>
               <!-- VK -->
               <a href="#">
-                <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="Вконтакте" />
+                <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="Вконтакте">
               </a>
             </li>
             <li>
               <!-- Instagram -->
               <a href="#">
-                <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="Instagram" />
+                <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="Instagram">
               </a>
             </li>
             <li>
               <!-- Twitter -->
               <a href="#">
-                <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="Twitter" />
+                <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="Twitter">
               </a>
             </li>
           </ul>
         </section>
 
         <a href="#">
-          <img src="img/logo-html.svg" width="32" height="32" alt="HTML-Academy" />
+          <img src="img/logo-html.svg" width="32" height="32" alt="HTML-Academy">
         </a>
       </div>
     </footer>
 
-    <section class="modal modal-mail-us">
+    <section class="display-none modal modal-mail-us">
       <h2 class="visually-hidden">Напишите нам</h2>
       <form action="https://echo.htmlacademy.ru" method="get" class="form-mail-us">
 
@@ -503,7 +507,7 @@
       </button>
     </section>
 
-    <section class="modal modal-map">
+    <section class="display-none modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <p>
         <img src="img/map-big.png" width="960" height="559" alt="Офис компании по адресу г. Москва, ул. Строителей, 15 ">
