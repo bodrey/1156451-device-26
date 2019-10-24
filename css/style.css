@@ -73,8 +73,6 @@ body {
 
 .main-theme {}
 
-
-
 .main-theme a {
   text-decoration: none;
   color: #000000;
@@ -89,15 +87,18 @@ body {
   color: #000000;
 }
 
-a.button-animated {
+.button-animated {
   opacity: 1;
 
-  text-transform: uppercase;
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: bold;
   font-size: 18px;
   letter-spacing: 3.6px;
   line-height: 24px;
+
+  text-transform: uppercase;
+  text-align: center;
+
   background-color: transparent;
   background: linear-gradient(180deg, rgba(255,255,255,0) 14px, rgba(240,197,46,1) 15px, rgba(240,197,46,1) 22px, rgba(255,255,255,0) 23px);
 
@@ -106,13 +107,13 @@ a.button-animated {
 }
 
 
-a.button-animated:hover {
+.button-animated:hover {
   opacity: 1;
 
   background-color: rgba(240,197,46,1);
 }
 
-a.button-animated:active {
+.button-animated:active {
   opacity: 1;
   color: rgba(0,0,0,0.3);
   background-color: rgba(240,197,46,1);
@@ -228,7 +229,6 @@ a.button-animated:active {
   color: #464646;
 }
 
-
 .slider-product-features .single-feature {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: normal;
@@ -237,6 +237,8 @@ a.button-animated:active {
   letter-spacing: 0.36px;
   color: #000000;
 }
+
+
 
 .popular-categories {}
 
@@ -248,7 +250,6 @@ a.button-animated:active {
 .popular-categories-item {
   width: 160px;
 }
-
 
 .popular-categories-item a, .popular-categories-item a:hover, .popular-categories-item a:active {
   opacity: 1;
@@ -281,11 +282,71 @@ a.button-animated:active {
 
 }
 
-
 .popular-categories-item:hover .popular-categories-icon {
   background-color: rgba(240,197,45,1);
 }
 
 .popular-categories-item:active img, .popular-categories-item:active .popular-categories-caption {
   opacity: 0.3;
+}
+
+
+
+.services h3 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 47px;
+  letter-spacing: 0.21px;
+  line-height: 48px;
+}
+
+
+
+.brands {}
+
+.brands-list {
+  list-style: none;
+  padding: 0 0 0 0;
+}
+
+.brands-list li {
+
+}
+
+.brand {
+  display: block;
+  width: 260px;
+  height: 100px;
+}
+
+.brand-1 {
+  background-image: url('../img/logo-1.png');
+}
+
+.brand-1:hover {
+  background-image: url('../img/logo-1-hover.png');
+}
+
+.brand-2 {
+  background-image: url('../img/logo-2.png');
+}
+
+.brand-2:hover {
+  background-image: url('../img/logo-2-hover.png');
+}
+
+.brand-3 {
+  background-image: url('../img/logo-3.png');
+}
+
+.brand-3:hover {
+  background-image: url('../img/logo-3-hover.png');
+}
+
+.brand-4 {
+  background-image: url('../img/logo-4.png');
+}
+
+.brand-4:hover {
+  background-image: url('../img/logo-4-hover.png');
 }
