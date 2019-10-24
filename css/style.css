@@ -249,47 +249,67 @@ body {
 
 .popular-categories-item {
   width: 160px;
+  background: linear-gradient(180deg, rgba(240,197,46,0.5) 160px, rgba(255,255,255,0) 160px);
 }
 
-.popular-categories-item a, .popular-categories-item a:hover, .popular-categories-item a:active {
+.popular-categories-item:hover {
+  background: linear-gradient(180deg, rgba(240,197,46,1) 160px, rgba(255,255,255,0) 160px);
+}
+
+a.popular-categories-link, a.popular-categories-link:hover {
   opacity: 1;
 }
 
-.popular-categories-icon {
-  display: block;
-  width: 160px;
-  height: 160px;
+a.popular-categories-link:active {
+  opacity: 0.3;
+}
 
+a.popular-categories-link {
+  display: block;
+  padding: 192px 0 0 0;
   margin: 0 0 0 0;
-  padding: 0 0 0 0;
 
-  background-color: rgba(240,197,45,0.5);
-}
-
-.popular-categories-icon img {
-
-}
-
-.popular-categories-caption {
-  display: block;
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.18px;
   color: #000000;
-  margin-top: 35px;
 
+  background-color: transparent;
+  background-position: 50% top;
+  background-repeat: no-repeat;
 }
 
-.popular-categories-item:hover .popular-categories-icon {
-  background-color: rgba(240,197,45,1);
+#popular-categories-category-1 {
+  background-image: url("../img/popular-1.svg");
+  background-position: 50% 52px;
 }
 
-.popular-categories-item:active img, .popular-categories-item:active .popular-categories-caption {
-  opacity: 0.3;
+#popular-categories-category-2 {
+  background-image: url("../img/popular-2.svg");
+  background-position: 50% 43px;
 }
 
+#popular-categories-category-3 {
+  background-image: url("../img/popular-3.svg");
+  background-position: 49px 38px;
+}
+
+#popular-categories-category-4 {
+  background-image: url("../img/popular-4.svg");
+  background-position: 50% 48px;
+}
+
+#popular-categories-category-5 {
+  background-image: url("../img/popular-5.svg");
+  background-position: 54px 32px;
+}
+
+#popular-categories-category-6 {
+  background-image: url("../img/popular-6.svg");
+  background-position: 50% 48px;
+}
 
 
 .services h3 {
@@ -298,6 +318,7 @@ body {
   font-size: 47px;
   letter-spacing: 0.21px;
   line-height: 48px;
+  color: #000000;
 }
 
 
