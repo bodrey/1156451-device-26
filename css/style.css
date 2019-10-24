@@ -93,7 +93,7 @@ a.button-animated {
   opacity: 1;
 
   text-transform: uppercase;
-  font-family: gilroy;
+  font-family: "Gilroy", Arial, sans-serif;
   font-weight: bold;
   font-size: 18px;
   letter-spacing: 3.6px;
@@ -112,12 +112,17 @@ a.button-animated:hover {
   background-color: rgba(240,197,46,1);
 }
 
-
+a.button-animated:active {
+  opacity: 1;
+  color: rgba(0,0,0,0.3);
+  background-color: rgba(240,197,46,1);
+}
 
 .page-header {}
 
 .page-navigation {
   color: #000000;
+  background-color: #F0C52E;
 }
 
 
@@ -231,4 +236,56 @@ a.button-animated:hover {
   line-height: 48px;
   letter-spacing: 0.36px;
   color: #000000;
+}
+
+.popular-categories {}
+
+.popular-categories-list {
+  list-style: none;
+  padding: 0 0 0 0;
+}
+
+.popular-categories-item {
+  width: 160px;
+}
+
+
+.popular-categories-item a, .popular-categories-item a:hover, .popular-categories-item a:active {
+  opacity: 1;
+}
+
+.popular-categories-icon {
+  display: block;
+  width: 160px;
+  height: 160px;
+
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+
+  background-color: rgba(240,197,45,0.5);
+}
+
+.popular-categories-icon img {
+
+}
+
+.popular-categories-caption {
+  display: block;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+  color: #000000;
+  margin-top: 35px;
+
+}
+
+
+.popular-categories-item:hover .popular-categories-icon {
+  background-color: rgba(240,197,45,1);
+}
+
+.popular-categories-item:active img, .popular-categories-item:active .popular-categories-caption {
+  opacity: 0.3;
 }
