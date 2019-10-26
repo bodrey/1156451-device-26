@@ -281,32 +281,32 @@ a.popular-categories-link {
   background-repeat: no-repeat;
 }
 
-#popular-categories-category-1 {
+.popular-categories-link.popular-categories-category-1 {
   background-image: url("../img/popular-1.svg");
   background-position: 50% 52px;
 }
 
-#popular-categories-category-2 {
+.popular-categories-link.popular-categories-category-2 {
   background-image: url("../img/popular-2.svg");
   background-position: 50% 43px;
 }
 
-#popular-categories-category-3 {
+.popular-categories-link.popular-categories-category-3 {
   background-image: url("../img/popular-3.svg");
   background-position: 49px 38px;
 }
 
-#popular-categories-category-4 {
+.popular-categories-link.popular-categories-category-4 {
   background-image: url("../img/popular-4.svg");
   background-position: 50% 48px;
 }
 
-#popular-categories-category-5 {
+.popular-categories-link.popular-categories-category-5 {
   background-image: url("../img/popular-5.svg");
   background-position: 54px 32px;
 }
 
-#popular-categories-category-6 {
+.popular-categories-link.popular-categories-category-6 {
   background-image: url("../img/popular-6.svg");
   background-position: 50% 48px;
 }
@@ -334,10 +334,14 @@ a.popular-categories-link {
 
 }
 
-.brand {
+a.brand {
   display: block;
   width: 260px;
   height: 100px;
+}
+
+a.brand:hover {
+  opacity: 1;
 }
 
 .brand-1 {
