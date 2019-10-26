@@ -87,7 +87,7 @@ body {
   color: #000000;
 }
 
-.button-animated {
+a.button-animated {
   opacity: 1;
 
   font-family: "Gilroy", Arial, sans-serif;
@@ -107,13 +107,13 @@ body {
 }
 
 
-.button-animated:hover {
+a.button-animated:hover {
   opacity: 1;
 
   background-color: rgba(240,197,46,1);
 }
 
-.button-animated:active {
+a.button-animated:active {
   opacity: 1;
   color: rgba(0,0,0,0.3);
   background-color: rgba(240,197,46,1);
@@ -128,20 +128,20 @@ body {
 
 
 
-.header-logo {
+.device-logo {
 }
 
-.header-logo:hover {
+.device-logo:hover {
   opacity: 0.6;
 }
 
-.header-logo:active {
+.device-logo:active {
   opacity: 0.3;
 }
 
 /* fix for ie 10 and 11 */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .header-logo img:active {
+  .device-logo img:active {
     opacity: 0.3;
   }
 }
@@ -374,4 +374,23 @@ a.brand:hover {
 
 .brand-4:hover {
   background-image: url('../img/logo-4-hover.png');
+}
+
+
+.about-us h2 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 47px;
+  letter-spacing: 0.21px;
+  line-height: 48px;
+  color: #000000;
+}
+
+.contacts h2 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 47px;
+  letter-spacing: 0.21px;
+  line-height: 48px;
+  color: #000000;
 }
