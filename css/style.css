@@ -62,11 +62,33 @@ body {
 
   background-color: #ffffff;
 
+  min-width: 1160px;
+
   /*
   background-image: url("");
   background-position: top center;
   background-repeat: no-repeat;
   */
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.disabled {
+  display: none;
+}
+
+.container {
+  width: 1160px;
+  margin: auto;
 }
 
 
@@ -121,14 +143,21 @@ a.button-animated:active {
 
 .page-header {}
 
+/* --- --- --- --- --- --- --- --- --- --- */
+
 .page-navigation {
   color: #000000;
-  background-color: #F0C52E;
+  background-color: rgba(240, 197, 46, 0.5);
+  /*
+  background: linear-gradient(180deg, rgba(255,255,255,0) 40px, rgba(240,197,46,0.5) 40px);
+   */
+  padding: 0 57px 50px 57px;
+  margin: 40px 0 0 0;
 }
 
-
-
-.device-logo {
+.page-header .device-logo {
+  position: relative;
+  top: -18px;
 }
 
 .device-logo:hover {
@@ -146,27 +175,157 @@ a.button-animated:active {
   }
 }
 
-
+/* --- --- --- --- --- --- --- --- --- --- */
 
 .user-navigation {
+  list-style: none;
+  padding: 0 0 0 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin: 0 4px 0 0;
+}
+
+.user-navigation > li {
   font-family: "Open Sans light", Arial, sans-serif;
   font-weight: normal;
   font-size: 15px;
   line-height: 30px;
   letter-spacing: 0.15px;
+
+  margin-right: 42px;
 }
 
-.header-search {}
+.user-navigation > li:last-child {
+  margin-right: 0px;
+}
 
-/* --- */
+
+.user-navigation  .search {
+  min-width: 543px;
+  margin-right: 0px;
+}
+
+.user-navigation .authorization {
+  min-width: 280px;
+  flex-grow: 1;
+
+  margin-right: 0px;
+}
+
+.user-navigation .user-navigation-link {
+  position: relative;
+}
+
+.user-navigation .login-link {
+  position: relative;
+  padding-left: 27px;
+}
+
+.login-link::before {
+  content: "";
+
+  position: absolute;
+  top: 4px;
+  left: 0px;
+
+  width: 13px;
+  height: 12px;
+
+  background-image: url("../img/user.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 1;
+}
+
+.user-navigation .user-profile-link {
+  position: relative;
+  padding-left: 27px;
+}
+
+.user-profile-link::before {
+  content: "";
+
+  position: absolute;
+  top: 4px;
+  left: 0px;
+
+  width: 13px;
+  height: 12px;
+
+  background-image: url("../img/user.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 1;
+}
+
+.logout-link {
+  margin-left: 16px;
+  opacity: 0.3;
+}
+
+.user-navigation .compare-link {
+  padding-left: 20px;
+
+}
+
+.compare-link::before {
+  content: "";
+
+  position: absolute;
+  top: 6px;
+  left: 0px;
+
+  width: 10px;
+  height: 10px;
+
+  background-image: url("../img/compare.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 1;
+}
+
+.user-navigation .cart-link {
+  padding-left: 24px;
+}
+
+.cart-link::before {
+  content: "";
+
+  position: absolute;
+  top: 4px;
+  left: 0px;
+
+  width: 12px;
+  height: 12px;
+
+  background-image: url("../img/cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 1;
+}
+
+/* --- --- --- --- --- --- --- --- --- --- */
 
 .site-navigation {
   list-style: none;
   padding: 0 0 0 0;
 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin: 40px 0 0 0;
+
 }
 
-.site-navigation li {
+.site-navigation > li {
   text-transform: uppercase;
 
   font-family: "Gilroy", Arial, sans-serif;
@@ -174,7 +333,22 @@ a.button-animated:active {
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 3.6px;
+
+  margin-right: 42px;
 }
+
+.site-navigation > li:last-child {
+  margin-right: 0px;
+  flex-grow: 1;
+  text-align: right;
+}
+
+.site-navigation .site-navigation-catalog {
+  position: relative;
+  min-width: 243px;
+  margin-right: 300px;
+}
+
 
 .site-navigation h2 {
   font-size: inherit;
@@ -184,19 +358,74 @@ a.button-animated:active {
   margin: 0 0 0 0;
 }
 
+/* --- --- --- --- --- --- --- --- --- --- */
+
 .catalog-navigation {
+  display: none;
+
+  position: absolute;
+  left: -57px;
+
   list-style: none;
-  padding: 0 0 0 0;
+  padding: 20px 440px 30px 57px;
+
+  flex-wrap: wrap;
+
+  width: 1160px;
+
+  background: rgba(247,226,150,1);
+}
+
+.site-navigation-catalog:hover .catalog-navigation {
+  display: flex;
 }
 
 .catalog-navigation li {
-  text-transform: capitalize;
+  text-transform: initial;
   font-family: "Open Sans light", Arial, sans-serif;
   font-weight: normal;
   font-size: 15px;
   line-height: 36px;
   letter-spacing: 0.15px;
+
+  margin: 0;
 }
+
+/* fix for ie 10 and 11 */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .catalog-navigation li {
+    text-transform: lowercase;
+  }
+
+  .catalog-navigation li:first-letter {
+    text-transform: capitalize;
+  }
+}
+
+
+.catalog-navigation li:nth-child(3n+1) {
+  width: 240px;
+  padding-right: 40px;
+}
+
+.catalog-navigation li:nth-child(3n+2) {
+  width: 200px;
+  padding-right: 40px;
+}
+
+.catalog-navigation li:nth-child(3n) {
+  width: 200px;
+  padding-right: 40px;
+}
+
+.catalog-navigation li:nth-last-child(2) {
+  margin-right: 200px
+}
+
+.catalog-navigation li:last-child {
+  margin-right: 440px
+}
+
 
 /* --- */
 
@@ -393,4 +622,19 @@ a.brand:hover {
   letter-spacing: 0.21px;
   line-height: 48px;
   color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+.social-list {
+  list-style: none;
+  padding: 0 0 0 0;
 }
