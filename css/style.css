@@ -429,12 +429,36 @@ a.button-animated:active {
 
 /* --- */
 
+
+
+
+
+
+
+
 .slider {}
 
 .slider-list {
   list-style: none;
   padding: 0 0 0 0;
+  margin: 0 0 0 0;
+
+  background: transparent;
+  background: linear-gradient(180deg, rgba(240,197,46,0.5) 110px, rgba(255,255,255,0) 110px);
 }
+
+.slider-item {
+  display: flex;
+}
+
+.slider-image-container {
+  width: 600px;
+}
+
+.slider-text-container {
+  padding-right: 53px;
+}
+
 
 .slider-advertising-message {
   font-family: "Gilroy", Arial, sans-serif;
@@ -466,6 +490,19 @@ a.button-animated:active {
   letter-spacing: 0.36px;
   color: #000000;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -549,6 +586,16 @@ a.popular-categories-link {
   line-height: 48px;
   color: #000000;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
