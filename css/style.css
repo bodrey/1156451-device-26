@@ -522,6 +522,7 @@ a.button-animated:active {
   padding: 0 0 0 0;
 
   display: flex;
+  flex-wrap: wrap;
 
   font-family: "Open Sans light", Arial, sans-serif;
   font-weight: normal;
@@ -533,6 +534,7 @@ a.button-animated:active {
 
 .slider-advertisement-product-features li {
   min-width: 162px;
+  margin-bottom: 20px;
 }
 
 .slider-advertisement-product-features .single-feature {
@@ -585,11 +587,21 @@ a.button-animated:active {
 .popular-categories-list {
   list-style: none;
   padding: 0 0 0 0;
+  margin: 86px 0 0 0;
+
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .popular-categories-item {
   width: 160px;
   background: linear-gradient(180deg, rgba(240,197,46,0.5) 160px, rgba(255,255,255,0) 160px);
+
+  margin: 0 40px 60px 0;
+}
+
+.popular-categories-item:nth-child(6n) {
+  margin-right: 0;
 }
 
 .popular-categories-item:hover {
@@ -650,6 +662,8 @@ a.popular-categories-link {
   background-image: url("../img/popular-6.svg");
   background-position: 50% 48px;
 }
+
+/* --- --- --- --- popular --- --- --- --- */
 
 
 .services h3 {
