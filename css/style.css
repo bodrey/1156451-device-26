@@ -749,7 +749,7 @@ a.popular-categories-link {
 .slider-services-controls-item {
   display: block;
   width: 160px;
-  padding: 7px 0;
+  padding: 8px 0 7px;
   color: #000000;
 
   cursor: pointer;
@@ -765,7 +765,7 @@ a.popular-categories-link {
   text-align: center;
 
   background-color: transparent;
-  background: linear-gradient(180deg, rgba(255,255,255,0) 14px, rgba(240,197,46,1) 15px, rgba(240,197,46,1) 22px, rgba(255,255,255,0) 23px);
+  background: linear-gradient(180deg, rgba(255,255,255,0) 15px, rgba(240,197,46,1) 16px, rgba(240,197,46,1) 23px, rgba(255,255,255,0) 24px);
 
 }
 
