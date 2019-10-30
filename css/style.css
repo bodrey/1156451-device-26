@@ -108,8 +108,6 @@ body {
   color: #000000;
 }
 
-
-
 a.button-animated {
   opacity: 1;
 
@@ -433,6 +431,10 @@ a.button-animated:active {
 
 /* --- --- --- --- advertisement slider --- --- --- --- */
 
+.slider-advertisement .container {
+  position: relative;
+}
+
 .slider-advertisement-list {
   /*
   counter-reset: advertisement-item-counter;
@@ -449,7 +451,7 @@ a.button-animated:active {
 }
 
 .slider-advertisement-item {
-  display: flex;
+  display: none;
   position: relative;
 }
 
@@ -549,34 +551,88 @@ a.button-animated:active {
   color: #000000;
 }
 
+/* --- --- --- --- advertisement slider controls --- --- --- --- */
+
+.slider-advertisement-controls {
+  position: absolute;
+  right: 78px;
+  bottom: 149px;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  max-width: 96px;
+
+  z-index: 10;
+
+  font-size: 0;
+
+  background-color: transparent;
+}
+
+.slider-advertisement-controls-item {
+  display: block;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  margin: 10px;
+
+  border-radius: 50%;
+  cursor: pointer;
+
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("../img/slider-button-empty.svg");
+}
+
+#slider-advertisement-item-1:checked ~ .slider-advertisement-controls .slider-advertisement-controls-item:nth-child(1),
+#slider-advertisement-item-2:checked ~ .slider-advertisement-controls .slider-advertisement-controls-item:nth-child(2),
+#slider-advertisement-item-3:checked ~ .slider-advertisement-controls .slider-advertisement-controls-item:nth-child(3) {
+  background-image: url("../img/slider-button.svg");
+}
+
+/* --- --- --- --- advertisement slider mechanics--- --- --- --- */
+
+#slider-advertisement-item-1:checked ~ .slider-advertisement-list .slider-advertisement-item:nth-child(1),
+#slider-advertisement-item-2:checked ~ .slider-advertisement-list .slider-advertisement-item:nth-child(2),
+#slider-advertisement-item-3:checked ~ .slider-advertisement-list .slider-advertisement-item:nth-child(3) {
+  display: flex;
+}
+
 /* --- --- --- --- advertisement slider current item styles --- --- --- --- */
 
-
-.slider-advertisement-item-1::before {
+.slider-advertisement-item:nth-child(1)::before {
   content: "01";
 }
 
-.slider-advertisement-item-1 .slider-advertisement-image {
+.slider-advertisement-item:nth-child(1) .slider-advertisement-image {
   margin: 2px 0 0 90px;
 }
 
 
 
-.slider-advertisement-item-2::before {
+.slider-advertisement-item:nth-child(2)::before {
   content: "02";
 }
 
-.slider-advertisement-item-2 .slider-advertisement-image {
+.slider-advertisement-item:nth-child(2) .slider-advertisement-image {
   margin: 14px 0 0 116px;
 }
 
+#slider-advertisement-item-2:checked ~ .slider-advertisement-list .slider-advertisement-image-container   {
+  /*
+    fix for slider-advertisement-controls-item position on slide 2
+  */
+  max-height: 499px;
+}
 
 
-.slider-advertisement-item-3::before {
+.slider-advertisement-item:nth-child(3)::before {
   content: "03";
 }
 
-.slider-advertisement-item-3 .slider-advertisement-image {
+.slider-advertisement-item:nth-child(3) .slider-advertisement-image {
   margin: 67px 0 0 31px;
 }
 
@@ -690,7 +746,7 @@ a.popular-categories-link {
 
 /* --- --- --- --- services buttons --- --- --- --- */
 
-.slider-controls-item {
+.slider-services-controls-item {
   display: block;
   width: 160px;
   padding: 7px 0;
@@ -713,7 +769,7 @@ a.popular-categories-link {
 
 }
 
-.slider-controls-item:hover {
+.slider-services-controls-item:hover {
   background-color: rgba(240,197,46,1);
 }
 
@@ -724,7 +780,7 @@ a.popular-categories-link {
   background: #000000;
 }
 
-#slider-services-item-1:checked ~ .slider-services-controls li:nth-child(1) .slider-controls-item {
+#slider-services-item-1:checked ~ .slider-services-controls li:nth-child(1) .slider-services-controls-item {
   color: rgba(247,225,132,1);
   background: #000000;
   cursor: initial;
@@ -734,7 +790,7 @@ a.popular-categories-link {
   background: #000000;
 }
 
-#slider-services-item-2:checked ~ .slider-services-controls li:nth-child(2) .slider-controls-item {
+#slider-services-item-2:checked ~ .slider-services-controls li:nth-child(2) .slider-services-controls-item {
   color: rgba(247,225,132,1);
   background: #000000;
   cursor: initial;
@@ -745,7 +801,7 @@ a.popular-categories-link {
   cursor: initial;
 }
 
-#slider-services-item-3:checked ~ .slider-services-controls li:nth-child(3) .slider-controls-item {
+#slider-services-item-3:checked ~ .slider-services-controls li:nth-child(3) .slider-services-controls-item {
   color: rgba(247,225,132,1);
   background: #000000;
 }
@@ -781,7 +837,7 @@ a.popular-categories-link {
 
 .slider-services-item {
   background-color: transparent;
-  background-position: center right;
+  background-position: 660px 32px;
   background-repeat: no-repeat;
 }
 
