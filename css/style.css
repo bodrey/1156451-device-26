@@ -90,9 +90,47 @@ body {
   margin: auto;
 }
 
-/* --- --- --- --- main-theme, links and buttons --- --- --- --- */
+/* --- --- --- --- main-theme, headers and paragraphs --- --- --- --- */
 
-.main-theme {}
+.main-theme h2 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 47px;
+  letter-spacing: 0.21px;
+  line-height: 48px;
+  color: #000000;
+}
+
+.main-theme .header-line {
+  position: relative;
+
+  margin: 0px 0 42px 0;
+  padding: 54px 0 0 0;
+
+}
+
+/*
+.main-theme p {
+  margin: 15px 0;
+}
+ */
+
+.main-theme .header-line::before {
+  content: "";
+
+  display: block;
+  width: 80px;
+  height: 7px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+
+  background: #000000;
+}
+
+/* --- --- --- --- main-theme, links and buttons --- --- --- --- */
 
 .main-theme a {
   text-decoration: none;
@@ -109,6 +147,8 @@ body {
 }
 
 a.button-animated {
+  display: inline-block;
+
   opacity: 1;
 
   font-family: "Gilroy", Arial, sans-serif;
@@ -121,7 +161,7 @@ a.button-animated {
   text-align: center;
 
   background-color: transparent;
-  background: linear-gradient(180deg, rgba(255,255,255,0) 14px, rgba(240,197,46,1) 15px, rgba(240,197,46,1) 22px, rgba(255,255,255,0) 23px);
+  background: linear-gradient(180deg, rgba(255,255,255,0) 15px, rgba(240,197,46,1) 16px, rgba(240,197,46,1) 23px, rgba(255,255,255,0) 24px);
 
   padding: 8px 40px 7px;
 
@@ -479,6 +519,11 @@ a.button-animated:active {
 
 .slider-advertisement-image-container {
   flex-grow: 1;
+
+  /*
+    fix for slider-advertisement-controls-item position on slide 2
+  */
+  max-height: 499px;
 }
 
 .slider-advertisement-text-container {
@@ -516,7 +561,7 @@ a.button-animated:active {
 }
 
 .slider-advertisement-button {
-  margin: 48px 0 53px 0;
+  margin: 43px 0 50px 0;
 }
 
 .slider-advertisement-product-features {
@@ -620,12 +665,13 @@ a.button-animated:active {
   margin: 14px 0 0 116px;
 }
 
+/*
+fix for slider-advertisement-controls-item position on slide 2, moved to all .slider-advertisement-image-container tags
+
 #slider-advertisement-item-2:checked ~ .slider-advertisement-list .slider-advertisement-image-container   {
-  /*
-    fix for slider-advertisement-controls-item position on slide 2
-  */
   max-height: 499px;
 }
+*/
 
 
 .slider-advertisement-item:nth-child(3)::before {
@@ -871,10 +917,6 @@ a.popular-categories-link {
   justify-content: space-between;
 }
 
-.brands-list li {
-
-}
-
 a.brand {
   display: block;
   width: 260px;
@@ -917,24 +959,80 @@ a.brand:hover {
   background-image: url('../img/logo-4-hover.png');
 }
 
+/* --- --- --- --- info-blocks --- --- --- --- */
 
-.about-us h2 {
+.info-blocks .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-blocks-item {
+  width: 560px;
+}
+
+.info-blocks-item p {
+  margin: 32px 0;
+}
+
+.info-blocks-list {
+  list-style: none;
+  padding: 0 0 0 36px;
+  margin: 64px 0;
+
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: bold;
-  font-size: 47px;
-  letter-spacing: 0.21px;
-  line-height: 48px;
+  font-size: 16px;
+  line-height: 40px;
+  letter-spacing: 0px;
   color: #000000;
 }
 
-.contacts h2 {
-  font-family: "Gilroy", Arial, sans-serif;
-  font-weight: bold;
-  font-size: 47px;
-  letter-spacing: 0.21px;
-  line-height: 48px;
-  color: #000000;
+.info-blocks-list li {
+  position: relative;
 }
+
+.info-blocks-list li::before {
+  content: "";
+
+  position: absolute;
+  top: 17px;
+  left: -34px;
+
+  display: block;
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  margin: 0px;
+
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("../img/oval.svg");
+
+}
+
+.info-blocks-item .button-animated {
+  width: 260px;
+  padding-left: 0;
+  padding-right: 0;
+
+}
+
+.contacts .button-animated {
+  /*
+    bad one place
+  */
+  margin-top: 45px;
+}
+
+/* --- --- --- --- info-blocks --- --- --- --- */
+
+.page-footer {
+  background-color: rgba(70,70,70,1);
+  margin-top: 50px;
+}
+
+
 
 
 
@@ -964,3 +1062,10 @@ a.brand:hover {
 .disabled {
   display: none;
 }
+/*
+
+
+
+
+
+ */
