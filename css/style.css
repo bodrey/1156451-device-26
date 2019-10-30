@@ -663,35 +663,156 @@ a.popular-categories-link {
   background-position: 50% 48px;
 }
 
-/* --- --- --- --- popular --- --- --- --- */
+/* --- --- --- --- services --- --- --- --- */
 
 
-.services h3 {
+.slider-services {
+  background: linear-gradient(180deg, rgba(255,255,255,0) 116px, rgba(229,229,229,1) 116px);
+  min-height: 402px;
+}
+
+.slider-services-container {
+  display: flex;
+}
+.slider-services-controls {
+  flex-shrink: 0;
+  list-style: none;
+  padding: 82px 0 41px 0;
+
+  border-right: 7px solid black;
+  margin: 15px 0 70px;
+}
+
+.slider-services-controls li {
+  margin: 0 0 27px 0;
+  width: 278px;
+}
+
+/* --- --- --- --- services buttons --- --- --- --- */
+
+.slider-controls-item {
+  display: block;
+  width: 160px;
+  padding: 7px 0;
+  color: #000000;
+
+  cursor: pointer;
+
+
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 3.6px;
+  line-height: 24px;
+
+  text-transform: uppercase;
+  text-align: center;
+
+  background-color: transparent;
+  background: linear-gradient(180deg, rgba(255,255,255,0) 14px, rgba(240,197,46,1) 15px, rgba(240,197,46,1) 22px, rgba(255,255,255,0) 23px);
+
+}
+
+.slider-controls-item:hover {
+  background-color: rgba(240,197,46,1);
+}
+
+
+/* --- --- --- --- services mechanics--- --- --- --- */
+
+#slider-services-item-1:checked ~ .slider-services-controls li:nth-child(1) {
+  background: #000000;
+}
+
+#slider-services-item-1:checked ~ .slider-services-controls li:nth-child(1) .slider-controls-item {
+  color: rgba(247,225,132,1);
+  background: #000000;
+  cursor: initial;
+}
+
+#slider-services-item-2:checked ~ .slider-services-controls li:nth-child(2) {
+  background: #000000;
+}
+
+#slider-services-item-2:checked ~ .slider-services-controls li:nth-child(2) .slider-controls-item {
+  color: rgba(247,225,132,1);
+  background: #000000;
+  cursor: initial;
+}
+
+#slider-services-item-3:checked ~ .slider-services-controls li:nth-child(3) {
+  background: #000000;
+  cursor: initial;
+}
+
+#slider-services-item-3:checked ~ .slider-services-controls li:nth-child(3) .slider-controls-item {
+  color: rgba(247,225,132,1);
+  background: #000000;
+}
+
+#slider-services-item-1:checked ~ .slider-services-list .slider-services-item:nth-child(1),
+#slider-services-item-2:checked ~ .slider-services-list .slider-services-item:nth-child(2),
+#slider-services-item-3:checked ~ .slider-services-list .slider-services-item:nth-child(3) {
+  display: block;
+}
+
+/* --- --- --- --- services items --- --- --- --- */
+
+.slider-services-list {
+  list-style: none;
+  padding: 44px 0;
+  margin: 15px 0;
+}
+
+.slider-services-item {
+  display: none;
+  padding: 30px 300px 30px 118px;
+}
+
+.slider-services h3 {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: bold;
   font-size: 47px;
   letter-spacing: 0.21px;
   line-height: 48px;
   color: #000000;
+  margin: 0 0 30px 0;
+}
+
+.slider-services-item {
+  background-color: transparent;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+.slider-services-item:nth-child(1) {
+  background-image: url("../img/delivery.svg");
+  background-position: 677px 41px;
+}
+
+.slider-services-item:nth-child(2) {
+  background-image: url("../img/warranty.svg");
+  background-position: 659px 19px;
+}
+
+.slider-services-item:nth-child(3) {
+  background-image: url("../img/credit.svg");
+  background-position: 651px 18px;
 }
 
 
 
-
-
-
-
-
-
-
-
-
+/* --- --- --- --- brands --- --- --- --- */
 
 .brands {}
 
 .brands-list {
   list-style: none;
   padding: 0 0 0 0;
+  margin: 94px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .brands-list li {
