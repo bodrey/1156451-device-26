@@ -51,7 +51,7 @@ a {
   text-decoration: none
 }
 
-body {
+body.main-theme {
   margin: 0;
   padding: 0;
 
@@ -307,12 +307,12 @@ a.button-animated:active {
   opacity: 0.3;
 }
 
+/* --- --- --- --- user-navigation other items --- --- --- --- */
+
 .user-navigation .compare-link {
   padding-left: 20px;
 
 }
-
-/* --- --- --- --- user-navigation other items --- --- --- --- */
 
 .compare-link::before {
   content: "";
@@ -1025,17 +1025,124 @@ a.brand:hover {
   margin-top: 45px;
 }
 
-/* --- --- --- --- info-blocks --- --- --- --- */
+/* --- --- --- --- page-footer --- --- --- --- */
 
 .page-footer {
   background-color: rgba(70,70,70,1);
   margin-top: 50px;
+
+  padding: 60px 0;
+}
+
+/* --- --- --- --- user-navigation footer  --- --- --- --- */
+
+.page-footer .user-navigation-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-footer .device-logo {
+  flex-grow: 1;
+}
+
+.user-navigation.user-navigation-footer {
+  justify-content: flex-end;
+  align-items: center;
 }
 
 
+/* --- --- --- --- user-navigation footer links --- --- --- --- */
 
 
+.user-navigation.user-navigation-footer .login-link::before {
+  background-image: url("../img/user-yellow.svg");
+}
 
+.user-navigation.user-navigation-footer .user-profile-link::before {
+  background-image: url("../img/user-yellow.svg");
+}
+
+.user-navigation.user-navigation-footer .compare-link::before {
+  background-image: url("../img/compare-yellow.svg");
+}
+
+.user-navigation.user-navigation-footer .cart-link::before {
+  background-image: url("../img/cart-yellow.svg");
+}
+
+.user-navigation.user-navigation-footer .login-link,
+.user-navigation.user-navigation-footer .user-profile-link,
+.user-navigation.user-navigation-footer .compare-link,
+.user-navigation.user-navigation-footer .cart-link {
+  color: rgba(255,255,255,0.7);
+}
+
+.user-navigation.user-navigation-footer .logout-link {
+  color: rgba(255,255,255,1);
+  opacity: 1;
+}
+
+.user-navigation.user-navigation-footer .login-link:hover,
+.user-navigation.user-navigation-footer .user-profile-link:hover,
+.user-navigation.user-navigation-footer .logout-link:hover,
+.user-navigation.user-navigation-footer .compare-link:hover,
+.user-navigation.user-navigation-footer .cart-link:hover {
+  color: rgba(255,255,255,1);
+  opacity: 1;
+}
+
+.user-navigation.user-navigation-footer .login-link:hover::before,
+.user-navigation.user-navigation-footer .user-profile-link:hover::before,
+.user-navigation.user-navigation-footer .compare-link:hover::before,
+.user-navigation.user-navigation-footer .cart-link:hover::before {
+  opacity: 0.6;
+}
+
+.user-navigation.user-navigation-footer .login-link:active,
+.user-navigation.user-navigation-footer .user-profile-link:active,
+.user-navigation.user-navigation-footer .logout-link:active,
+.user-navigation.user-navigation-footer .compare-link:active,
+.user-navigation.user-navigation-footer .cart-link:active{
+  color: rgba(255,255,255,0.3);
+  opacity: 1;
+}
+
+.user-navigation.user-navigation-footer .login-link:active::before,
+.user-navigation.user-navigation-footer .user-profile-link:active::before,
+.user-navigation.user-navigation-footer .compare-link:active::before,
+.user-navigation.user-navigation-footer .cart-link:active::before {
+  opacity: 0.3;
+}
+
+/* --- --- --- --- site-navigation footer --- --- --- --- */
+
+.page-footer .site-navigation-container {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 38px 0;
+}
+
+.footer-contacts p {
+  margin: 0;
+}
+
+.footer-contacts-address {
+  order: -1;
+}
+
+.site-navigation.site-navigation-footer {
+  margin-top: 2px;
+  order: 0;
+}
+
+.site-navigation.site-navigation-footer a {
+
+  color: white;
+}
 
 
 
@@ -1048,10 +1155,6 @@ a.brand:hover {
   list-style: none;
   padding: 0 0 0 0;
 }
-
-
-
-
 
 
 
