@@ -1182,7 +1182,6 @@ a.brand:hover {
   top: 25px;
   left: 0;
 
-
   background: #FFC600;
 }
 
@@ -1220,6 +1219,13 @@ a.brand:hover {
   opacity: 0.1;
 }
 
+/* fix for ie 10 and 11 */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .social-link svg:active path {
+    opacity: 0.3;
+  }
+}
+
 .html-academy-logo {
   display: block;
   width: 27px;
@@ -1235,21 +1241,15 @@ a.brand:hover {
   opacity: 0.3;
 }
 
+/* fix for ie 10 and 11 */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .html-academy-logo img:active {
+    opacity: 0.3;
+  }
+}
 
-
-
-
-
-
-
+/* --- --- --- --- other --- --- --- --- */
 
 .disabled {
   display: none;
 }
-/*
-
-
-
-
-
- */
