@@ -1167,40 +1167,73 @@ a.brand:hover {
 
 .social-links {
   display: flex;
+  position: relative;
+}
+
+
+.social-links::before {
+  content: "";
+
+  display: block;
+  width: 80px;
+  height: 7px;
+
+  position: absolute;
+  top: 25px;
+  left: 0;
+
+
+  background: #FFC600;
 }
 
 .social-links-list {
   list-style: none;
-  padding: 0 0 0 0;
+  padding: 0 0 0 46px;
+  margin: 0 0 0 0;
 
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  flex-grow: 1;
 }
 
 .social-link {
   margin: 10px;
   display: block;
+  height: 32px;
+  width: 32px;
+  flex-shrink: 0;
 }
 
-.social-link svg {
+.social-link path {
   fill: white;
   opacity: 0.3;
 }
 
-.social-link:hover svg {
+.social-link:hover path {
   opacity: 0.6;
 }
 
-.social-link:active svg {
+.social-link:active path {
   opacity: 0.1;
 }
 
 .html-academy-logo {
+  display: block;
+  width: 27px;
+  height: 35px;
   margin: 10px;
 }
 
+.html-academy-logo:hover {
+  opacity: 0.6;
+}
 
-
-
+.html-academy-logo:active {
+  opacity: 0.3;
+}
 
 
 
