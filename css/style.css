@@ -1118,12 +1118,16 @@ a.brand:hover {
 
 .page-footer .site-navigation-container {
   display: flex;
-  flex-wrap: wrap;
   color: white;
   align-items: center;
   justify-content: space-between;
 
   margin: 38px 0;
+}
+
+.footer-contacts {
+  width: 220px;
+  flex-shrink: 0;
 }
 
 .footer-contacts p {
@@ -1134,9 +1138,14 @@ a.brand:hover {
   order: -1;
 }
 
+.footer-contacts-phone {
+  text-align: right;
+}
+
 .site-navigation.site-navigation-footer {
   margin-top: 2px;
   order: 0;
+  padding-left: 42px;
 }
 
 .site-navigation.site-navigation-footer a {
@@ -1144,17 +1153,56 @@ a.brand:hover {
   color: white;
 }
 
+.site-navigation.site-navigation-footer {
+  flex-grow: 1;
+  justify-content: center;
+}
 
+.site-navigation.site-navigation-footer > li:last-child {
+  flex-grow: 0;
+  margin-right: 42px;
+}
 
+/* --- --- --- --- social-links-list --- --- --- --- */
 
+.social-links {
+  display: flex;
+}
 
-
-
-
-.social-list {
+.social-links-list {
   list-style: none;
   padding: 0 0 0 0;
+
+  display: flex;
 }
+
+.social-link {
+  margin: 10px;
+  display: block;
+}
+
+.social-link svg {
+  fill: white;
+  opacity: 0.3;
+}
+
+.social-link:hover svg {
+  opacity: 0.6;
+}
+
+.social-link:active svg {
+  opacity: 0.1;
+}
+
+.html-academy-logo {
+  margin: 10px;
+}
+
+
+
+
+
+
 
 
 
