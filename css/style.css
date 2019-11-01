@@ -1407,6 +1407,16 @@ a.brand:hover {
   margin-top: -276px;
 }
 
+.popup-map {
+  padding: 0;
+  top: 50%;
+  margin-top: -279px;
+}
+
+.popup-map-image {
+  display: block;
+}
+
 /* --- --- --- --- popup form --- --- --- --- */
 
 .form-mail-us {
@@ -1518,7 +1528,7 @@ a.brand:hover {
   background: rgba(237,181,181,0.5);
 }
 
-/* --- --- --- --- popup button --- --- --- --- */
+/* --- --- --- --- popup form button --- --- --- --- */
 
 .popup .button-animated {
   display: inline-block;
