@@ -136,12 +136,15 @@ body.main-theme {
   text-decoration: none;
   color: #000000;
 }
+
 .main-theme a:hover {
   opacity: 0.6;
 }
+
 .main-theme a:active {
   opacity: 0.3;
 }
+
 .main-theme a:visited {
   color: #000000;
 }
@@ -1158,6 +1161,70 @@ a.brand:hover {
   margin-top: 45px;
 }
 
+/* --- --- --- --- catalog-headings --- --- --- --- */
+
+.catalog-headings .container {
+  padding: 0 59px;
+}
+
+.catalog-headings h1 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 47px;
+  line-height: 48px;
+  letter-spacing: 1px;
+  color: #000000;
+
+  margin: 38px 0 30px 0;
+}
+
+.catalog-headings-breadcrumbs {
+  display: flex;
+
+  list-style: none;
+  padding: 0;
+
+  color: #000000;
+}
+
+.catalog-headings-breadcrumbs li {
+  position: relative;
+
+  text-decoration: none;
+  color: rgba(0,0,0,0.3);
+
+  padding-right: 42px;
+}
+
+.catalog-headings-breadcrumbs li::after {
+  content: "";
+
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+  width: 13px;
+  height: 12px;
+
+  background-image: url("../img/nav-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 1;
+}
+
+.catalog-headings-breadcrumbs a {
+  opacity: 0.3;
+}
+
+.catalog-headings-breadcrumbs a:hover {
+  opacity: 0.6;
+}
+
+.catalog-headings-breadcrumbs a:active {
+  opacity: 0.1;
+}
+
 /* --- --- --- --- page-footer --- --- --- --- */
 
 .page-footer {
@@ -1183,9 +1250,7 @@ a.brand:hover {
   align-items: center;
 }
 
-
 /* --- --- --- --- user-navigation footer links --- --- --- --- */
-
 
 .user-navigation.user-navigation-footer .login-link::before {
   background-image: url("../img/user-yellow.svg");
