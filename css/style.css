@@ -1166,7 +1166,7 @@ a.brand:hover {
   letter-spacing: 1px;
   color: #000000;
 
-  margin: 38px 0 30px 0;
+  margin: 38px 0 24px 0;
 }
 
 .catalog-headings-breadcrumbs {
@@ -1175,7 +1175,13 @@ a.brand:hover {
 
   list-style: none;
   padding: 0;
-  margin: 15px 0 44px 0;
+  margin: 15px 0 46px 0;
+
+  font-family: "Open Sans light", Arial, sans-serif;;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.14px;
 
   color: #000000;
 }
@@ -1193,7 +1199,7 @@ a.brand:hover {
   content: "";
 
   position: absolute;
-  top: 13px;
+  top: 9px;
   right: 8px;
 
   width: 13px;
@@ -1240,6 +1246,8 @@ a.brand:hover {
 .catalog-filters {
   width: 328px;
   padding: 0 57px;
+
+  flex-shrink: 0;
 }
 
 .catalog-goods {
@@ -1455,18 +1463,156 @@ a.brand:hover {
     padding: 7px 41px 8px 39px;
   }
 }
+/* --- --- --- --- catalog-goods --- --- --- --- */
+
+/* fix for ie 10 and 11 */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .catalog-goods {
+    width: 100%;
+  }
+}
+
+/* --- --- --- --- catalog-sort --- --- --- --- */
 
 
+.catalog-sort {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog-sort h3 {
+  text-transform: uppercase;
+
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 3.5px;
+  color: #000000;
+
+  margin: 23px 40px 23px 0;
+  padding: 0 0 0 0;
+}
+
+.catalog-sort-list  {
+  list-style: none;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  display: flex;
+}
+
+.catalog-sort-list-type {
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+
+.catalog-sort-list li {
+  margin: 19px 30px 21px 0;
+}
+
+.catalog-sort-list button {
+  display: inline;
+  background: transparent;
+  border: none;
+
+  padding: 0;
+  margin: 0;
+
+  font-family: "Open Sans light", Arial, sans-serif;;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0px;
+  color: #000000;
+
+  cursor: pointer;
+
+  opacity: 0.3;
+}
+
+.catalog-sort-list button:hover {
+  opacity: 0.6;
+}
+
+.catalog-sort-list button:active {
+  opacity: 1;
+}
+
+.catalog-sort-list button.selected {
+  opacity: 1;
+}
 
 
+/* fix for ie 10 and 11 */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .catalog-sort-list-type button {
+    padding-right: 2px;
+  }
+  .catalog-sort-list-type button:active:hover{
+    position: relative;
+    top: -1px;
+    left: -1px;
+  }
+}
 
+.catalog-sort-list-order li {
+  margin-right: 20px;
+}
 
+.catalog-sort-list-order li:last-child {
+  margin-right: 0px;
+}
 
+.catalog-sort-list-order .direct-order {
+  display: inline-block;
+  position: relative;
 
+  width: 11px;
+  height: 18px;
 
+  font-size: 0;
+  line-height: 18px;
+}
 
+.catalog-sort-list-order .direct-order::before {
+  content: "";
 
+  position: absolute;
+  top: 0px;
+  left: 0px;
 
+  width: 11px;
+  height: 10px;
+
+  background-image: url("../img/icon-up-dir.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.catalog-sort-list-order .reverse-order {
+  display: inline-block;
+  position: relative;
+
+  width: 11px;
+  height: 18px;
+
+  font-size: 0;
+}
+
+.catalog-sort-list-order .reverse-order::before {
+  content: "";
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  width: 11px;
+  height: 10px;
+
+  background-image: url("../img/icon-down-dir.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
 
 
 
