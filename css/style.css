@@ -1183,6 +1183,7 @@ a.brand:hover {
 
   list-style: none;
   padding: 0;
+  margin: 15px 0 44px 0;
 
   color: #000000;
 }
@@ -1193,15 +1194,15 @@ a.brand:hover {
   text-decoration: none;
   color: rgba(0,0,0,0.3);
 
-  padding-right: 42px;
+  padding-right: 38px;
 }
 
 .catalog-headings-breadcrumbs li::after {
   content: "";
 
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 13px;
+  right: 8px;
 
   width: 13px;
   height: 12px;
@@ -1211,6 +1212,10 @@ a.brand:hover {
   background-position: 0 0;
 
   opacity: 1;
+}
+
+.catalog-headings-breadcrumbs li:last-child::after {
+  display: none;
 }
 
 .catalog-headings-breadcrumbs a {
@@ -1223,6 +1228,43 @@ a.brand:hover {
 
 .catalog-headings-breadcrumbs a:active {
   opacity: 0.1;
+}
+
+/* --- --- --- --- catalog-content--- --- --- --- */
+
+.catalog-content {
+  background-color: transparent;
+  background:
+    linear-gradient(90deg, rgba(210,210,210,0.4) calc(50% - 252px), rgba(210,210,210,0.0) calc(50% - 252px)),
+    linear-gradient(180deg, rgba(210,210,210,0.4) 70px, rgba(210,210,210,0.0) 70px);
+}
+
+.catalog-content .container {
+  display: flex;
+}
+
+.catalog-filters {
+  width: 328px;
+  padding: 0 0 0 57px;
+}
+
+.catalog-goods {
+  flex-grow: 1;
+  padding: 0 57px 0 0;
+}
+
+.catalog-filters h2 {
+  text-transform: uppercase;
+
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 3.5px;
+  color: #000000;
+
+  margin: 22px 0;
+  padding: 0 0 0 0;
 }
 
 /* --- --- --- --- page-footer --- --- --- --- */
