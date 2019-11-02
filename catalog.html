@@ -5,19 +5,6 @@
     <title>Девайс Каталог</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <style>
-      .visually-hidden {
-        position: absolute !important;
-        clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-        clip: rect(1px, 1px, 1px, 1px);
-        padding:0 !important;
-        border:0 !important;
-        height: 1px !important;
-        width: 1px !important;
-        overflow: hidden;
-      }
-    </style>
-
   </head>
   <body class="main-theme">
     <header class="page-header">
@@ -127,48 +114,43 @@
               Фильтры
             </h2>
 
-            <form action="https://echo.htmlacademy.ru" method="get" class="form-filters">
-              <fieldset>
+            <form class="form-catalog-filters" action="https://echo.htmlacademy.ru" method="get">
+              <fieldset class="form-catalog-filters-group">
                 <legend>Стоимость</legend>
-
-                <p>
-                  <input type="range" id="form-filters-price" name="price"
-                         min="0" max="10">
-                  <label for="form-filters-price">0</label>
-                </p>
+                <input type="range" id="form-catalog-filters-price" name="price" min="0" max="10">
+                <label for="form-catalog-filters-price">0</label>
               </fieldset>
 
-              <fieldset>
+              <fieldset class="form-catalog-filters-group">
                 <legend>Цвет</legend>
-
-                <ul>
+                <ul class="form-catalog-filters-group-list">
                   <li>
-                    <input type="checkbox" name="color-black" id="form-filters-color-black" checked>
-                    <label for="form-filters-color-black">
+                    <input class="visually-hidden" type="checkbox" name="color-black" id="form-catalog-filters-color-black" checked>
+                    <label for="form-catalog-filters-color-black">
                       Черный
                     </label>
                   </li>
                   <li>
-                    <input type="checkbox" name="color-white" id="form-filters-color-white">
-                    <label for="form-filters-color-white">
+                    <input class="visually-hidden" type="checkbox" name="color-white" id="form-catalog-filters-color-white">
+                    <label for="form-catalog-filters-color-white">
                       Белый
                     </label>
                   </li>
                   <li>
-                    <input type="checkbox" name="color-blue" id="form-filters-color-blue" checked>
-                    <label for="form-filters-color-blue">
+                    <input class="visually-hidden" type="checkbox" name="color-blue" id="form-catalog-filters-color-blue" checked>
+                    <label for="form-catalog-filters-color-blue">
                       Синий
                     </label>
                   </li>
                   <li>
-                    <input type="checkbox" name="color-red" id="form-filters-color-red" checked>
-                    <label for="form-filters-color-red">
+                    <input class="visually-hidden" type="checkbox" name="color-red" id="form-catalog-filters-color-red" checked>
+                    <label for="form-catalog-filters-color-red">
                       Красный
                     </label>
                   </li>
                   <li>
-                    <input type="checkbox" name="color-pink" id="form-filters-color-pink">
-                    <label for="form-filters-color-pink">
+                    <input class="visually-hidden" type="checkbox" name="color-pink" id="form-catalog-filters-color-pink">
+                    <label for="form-catalog-filters-color-pink">
                       Розовый
                     </label>
                   </li>
@@ -176,26 +158,26 @@
               </fieldset>
 
 
-              <fieldset>
+              <fieldset class="form-catalog-filters-group">
                 <legend>Bluetooth</legend>
 
-                <ul>
+                <ul class="form-catalog-filters-group-list">
                   <li>
-                    <input type="radio" name="bluetooth" value="have" id="form-filters-bluetooth-have" checked>
-                    <label for="form-filters-bluetooth-have">
+                    <input class="visually-hidden" type="radio" name="bluetooth" value="have" id="form-catalog-filters-bluetooth-have" checked>
+                    <label for="form-catalog-filters-bluetooth-have">
                       Есть
                     </label>
                   </li>
                   <li>
-                    <input type="radio" name="bluetooth" value="have-not" id="form-filters-bluetooth-have-not">
-                    <label for="form-filters-bluetooth-have-not">
+                    <input class="visually-hidden" type="radio" name="bluetooth" value="have-not" id="form-catalog-filters-bluetooth-have-not">
+                    <label for="form-catalog-filters-bluetooth-have-not">
                       Нет
                     </label>
                   </li>
                 </ul>
               </fieldset>
 
-              <button type="submit">
+              <button class="button-animated" type="submit">
     <!-- или нужен type="button"?-->
                 Показать
               </button>
