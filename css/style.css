@@ -1752,8 +1752,12 @@ a.brand:hover {
 /* --- --- --- --- goods-list-item-buttons-box --- --- --- --- */
 
 
+
+
 .goods-list-item-buttons-box {
-  display: flex;
+  list-style: none;
+
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -1771,8 +1775,42 @@ a.brand:hover {
   background: rgba(238,238,238,0.7);
 }
 
+.goods-list-item-image-box:hover .goods-list-item-buttons-box {
+  display: flex;
+}
+
+/*
+ made it another way below, with justify-content: center
+
+.goods-list-item-buttons-box li:first-child {
+  margin-top: calc(50% - 19px);
+}
+*/
+
+.goods-list-item-buttons-box li:first-child {
+  margin-top: 36px;
+}
+
 .goods-list-item-buttons-box a {
-  margin: 10px 0;
+  margin: 5px 0;
+}
+
+.button-additional {
+  font-family: "Open Sans light", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 36px;
+  letter-spacing: 0.13px;
+
+  opacity: 0.5;
+}
+
+.button-additional:hover {
+  opacity: 1;
+}
+
+.button-additional:active {
+  opacity: 0.2;
 }
 /* --- --- --- --- goods-list-pages --- --- --- --- */
 
