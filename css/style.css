@@ -1380,7 +1380,9 @@ a.brand:hover {
   color: rgba(0,0,0,0.2);
 }
 
-.value-min {}
+.value-min {
+  
+}
 
 .value-max {
   text-align: right;
@@ -1529,7 +1531,6 @@ a.brand:hover {
 }
 
 /* --- --- --- --- catalog-sort --- --- --- --- */
-
 
 .catalog-sort {
   display: flex;
@@ -1803,9 +1804,6 @@ a.brand:hover {
 }
 
 /* --- --- --- --- goods-list-item-buttons-box --- --- --- --- */
-
-
-
 
 .goods-list-item-buttons-box {
   list-style: none;
