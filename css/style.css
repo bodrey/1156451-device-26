@@ -1250,11 +1250,6 @@ a.brand:hover {
   flex-shrink: 0;
 }
 
-.catalog-goods {
-  flex-grow: 1;
-  padding: 0 57px;
-}
-
 .catalog-filters h2 {
   text-transform: uppercase;
 
@@ -1465,6 +1460,14 @@ a.brand:hover {
 }
 /* --- --- --- --- catalog-goods --- --- --- --- */
 
+.catalog-goods {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  padding: 0 0 0 72px;
+}
+
 /* fix for ie 10 and 11 */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .catalog-goods {
@@ -1613,6 +1616,127 @@ a.brand:hover {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+
+
+/* --- --- --- --- goods-list --- --- --- --- */
+
+.goods-list {
+  list-style: none;
+
+  padding: 0 0 0 0;
+  margin: 70px 0 0 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.goods-list-item {
+  width: 360px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+
+  margin-bottom: 30px;
+}
+
+.goods-list-item-image-link {
+  order: 1;
+  position: relative;
+
+  display: block;
+
+  width: 100%;
+  height: 380px;
+
+  margin: 0;
+  padding: 0 0 0 0;
+}
+
+.goods-list-item-new {
+  display: block;
+  height: 60px;
+  width: 60px;
+
+  position: absolute;
+  top: 28px;
+  right: 28px;
+
+  border: 2px solid rgba(0,0,0,0.1);
+  border-radius: 50%;
+
+  font-size: 0;
+
+  margin: 0 0 0 0;
+  padding: 17px 10px 17px 13px;
+}
+
+.goods-list-item-new::before {
+  content: "New";
+
+  text-transform: uppercase;
+
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  color: rgba(0,0,0,0.2);
+}
+
+.goods-list-item-text {
+order: 2;
+display: flex;
+
+width: 100%;
+}
+
+.goods-list-item-name {
+flex-grow: 1;
+
+font-family: "Gilroy", Arial, sans-serif;
+font-weight: bold;
+font-size: 18px;
+line-height: 24px;
+letter-spacing: 0.18px;
+color: #000000;
+
+margin: 32px 0;
+}
+
+.goods-list-item-price {
+flex-shrink: 0;
+
+line-height: 24px;
+
+margin: 32px 0;
+padding-left: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
