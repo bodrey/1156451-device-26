@@ -113,12 +113,49 @@
             <h2>
               Фильтры
             </h2>
-
             <form class="form-catalog-filters" action="https://echo.htmlacademy.ru" method="get">
+
               <fieldset class="form-catalog-filters-group">
                 <legend>Стоимость</legend>
-                <input type="range" id="form-catalog-filters-price" name="price" min="0" max="10">
-                <label for="form-catalog-filters-price">0</label>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar" style="margin-left: 00%; width: 30%"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
+                  </div>
+                  <div class="price-controls">
+                    <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                    <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                  </div>
+                </div>
+
+
+
+
+
+                
+
+
+
+
+
+
+
               </fieldset>
 
               <fieldset class="form-catalog-filters-group">
@@ -160,7 +197,6 @@
 
               <fieldset class="form-catalog-filters-group">
                 <legend>Bluetooth</legend>
-
                 <ul class="form-catalog-filters-group-list">
                   <li>
                     <input class="visually-hidden" type="radio" name="bluetooth" value="have" id="form-catalog-filters-bluetooth-have" checked>
@@ -428,7 +464,7 @@
             </li>
           </ul>
 
-          <a class="html-academy-logo" href="https://htmlacademy.ru">
+          <a class="html-academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
             <img src="img/logo-html.svg" width="27" height="35" alt="HTML-Academy">
           </a>
         </div>
