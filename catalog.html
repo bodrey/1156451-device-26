@@ -227,12 +227,21 @@
                     500 руб.
                   </p>
                 </div>
-                <a class="goods-list-item-image-link" href="">
-                  <p class=" goods-list-item-new">
+                <div class="goods-list-item-image-box">
+                  <p class="disabled goods-list-item-new">
                     Новинка
                   </p>
-                  <img src="img/item-1.jpg" width="360" height="380" alt="Фото товара любительская селфи-палка>
-                </a>
+                  <!-- Different way to make "NEW" label with special class instead of additional block see below -->
+                  <img src="img/item-1.jpg" width="360" height="380" alt="Фото товара любительская селфи-палка">
+                  <p class="goods-list-item-buttons-box">
+                    <a class="button-animated" href="">
+                      В корзину
+                    </a>
+                    <a href="">
+                      Добавить к сравнению
+                    </a>
+                  </p>
+                </div>
               </li>
 
               <li class="goods-list-item">
@@ -244,12 +253,12 @@
                     1 500 руб.
                   </p>
                 </div>
-                <a class="goods-list-item-image-link" href="">
-                  <p class="disabled goods-list-item-new">
+                <div class="goods-list-item-image-box" href="">
+                  <p class="goods-list-item-new">
                     Новинка
                   </p>
                   <img src="img/item-2.jpg" width="360" height="380" alt="Фото товара профессиональная селфи-палка">
-                </a>
+                </div>
               </li>
 
               <li class="goods-list-item">
@@ -261,12 +270,9 @@
                     2 500 руб.
                   </p>
                 </div>
-                <a class="goods-list-item-image-link" href="">
-                  <p class="disabled goods-list-item-new">
-                    Новинка
-                  </p>
+                <div class="goods-list-item-image-box" href="">
                   <img src="img/item-4.jpg" width="360" height="380" alt="Фото товара непотопляемая селфи-палка">
-                </a>
+                </div>
               </li>
 
               <li class="goods-list-item">
@@ -278,24 +284,20 @@
                     4 900 руб.
                   </p>
                 </div>
-                <a class="goods-list-item-image-link" href="">
-                  <p class="disabled goods-list-item-new">
-                    Новинка
-                  </p>
+                <div class="goods-list-item-image-box new-item" href="">
                   <img src="img/item-1.jpg" width="360" height="380" alt="Фото товара cелфи-палка Следуй за мной">
-                </a>
+                </div>
               </li>
             </ul>
 
-            <div>
-    <!-- pagination -->
-              <h3 class="visually-hidden">
-                Страницы
-              </h3>
-              <ul>
-                <li>
-                  <a href="#">Назад</a>
-                </li>
+            <h3 class="visually-hidden">
+              Страницы
+            </h3>
+            <div class="goods-pages">
+              <a class="goods-pages-button" href="#">
+                Назад
+              </a>
+              <ul class="goods-pages-list">
                 <li>
                   1
                 </li>
@@ -305,10 +307,10 @@
                 <li>
                   <a href="#">3</a>
                 </li>
-                <li>
-                  <a href="#">Вперед</a>
-                </li>
               </ul>
+              <a class="goods-pages-button" href="#">
+                Вперед
+              </a>
             </div>
           </div>
 
