@@ -140,6 +140,7 @@ body.main-theme {
 
 a.button-animated {
   display: inline-block;
+  vertical-align: baseline;
 
   opacity: 1;
 
@@ -238,6 +239,7 @@ a.button-animated:active {
 
 .search-form {
   display: inline-block;
+  vertical-align: baseline;
   position: relative;
   font-size: 0;
 
@@ -262,6 +264,7 @@ a.button-animated:active {
 
 .search-input {
   display: inline-block;
+  vertical-align: baseline;
   height: 49px;
 
   font-family: "Open Sans light", Arial, sans-serif;
@@ -335,6 +338,7 @@ a.button-animated:active {
 
 .search-input:focus ~ .search-button {
   display: inline-block;
+  vertical-align: baseline;
 }
 
 /* --- --- --- --- user-navigation authorization --- --- --- --- */
@@ -1644,6 +1648,7 @@ a.brand:hover {
 
 .catalog-sort-list-order .direct-order {
   display: inline-block;
+  vertical-align: baseline;
   position: relative;
 
   width: 11px;
@@ -1670,6 +1675,7 @@ a.brand:hover {
 
 .catalog-sort-list-order .reverse-order {
   display: inline-block;
+  vertical-align: baseline;
   position: relative;
 
   width: 11px;
@@ -2353,6 +2359,7 @@ a.brand:hover {
 
 .popup .button-animated {
   display: inline-block;
+  vertical-align: baseline;
   cursor: pointer;
 
   opacity: 1;
@@ -2440,8 +2447,19 @@ a.brand:hover {
 /* --- --- --- --- other --- --- --- --- */
 
 .visually-hidden {
-  position: absolute !important;
+  position: absolute;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0;
+  border:0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  margin: -1px;
+
+  /*
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); IE6, IE7
   clip: rect(1px, 1px, 1px, 1px);
   padding:0 !important;
   border:0 !important;
@@ -2449,8 +2467,7 @@ a.brand:hover {
   width: 1px !important;
   overflow: hidden;
 
-  /*
-  !important используется в данных правилах для предотвращения нежелательнх результаов в случае дальнейшего использования сайта, наполнения непредусмотренным контентом или верстки другими разработчиками.
+  !important был оставлен в данных правилах для предотвращения нежелательнх результаов в случае дальнейшего использования сайта, наполнения непредусмотренным контентом или верстки другими разработчиками (гипотетически).
    */
 }
 
