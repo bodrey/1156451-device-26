@@ -288,6 +288,7 @@ a.button-animated:active {
 
 .search-button {
   display: none;
+  cursor: pointer;
 
   font-family: "Open Sans light", Arial, sans-serif;
   font-weight: normal;
@@ -310,6 +311,18 @@ a.button-animated:active {
 
   padding: 9px 21px 10px 20px;
   margin: 0;
+}
+
+.search-button:hover {
+  background: #000000;
+  color: rgba(255,255,255,1);
+}
+
+.search-button:active {
+  display: inline-block;
+  background: #000000;
+  color: rgba(255,255,255,0.3);
+  margin-left: 146px;
 }
 
 /* --- --- --- --- user-navigation search mechanics --- --- --- --- */
