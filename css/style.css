@@ -1500,16 +1500,16 @@ a.brand:hover {
   /*
     do we need this??
 
-    .form-catalog-filters .button-animated{
+    .form-catalog-filters .button-animated {
       padding: 7px 40px 8px 40px;
     }
 
-    .form-catalog-filters .button-animated:active:hover{
+    .form-catalog-filters .button-animated:active:hover {
       padding: 6px 41px 9px 39px;
     }
   */
 
-  .form-catalog-filters .button-animated:active:hover{
+  .form-catalog-filters .button-animated:active:hover {
     padding: 7px 41px 8px 39px;
   }
 }
@@ -1605,7 +1605,7 @@ a.brand:hover {
   .catalog-sort-list-type button {
     padding-right: 2px;
   }
-  .catalog-sort-list-type button:active:hover{
+  .catalog-sort-list-type button:active:hover {
     position: relative;
     top: -1px;
     left: -1px;
@@ -2018,7 +2018,7 @@ a.brand:hover {
 .user-navigation.user-navigation-footer .user-profile-link:active,
 .user-navigation.user-navigation-footer .logout-link:active,
 .user-navigation.user-navigation-footer .compare-link:active,
-.user-navigation.user-navigation-footer .cart-link:active{
+.user-navigation.user-navigation-footer .cart-link:active {
   color: rgba(255,255,255,0.3);
   opacity: 1;
 }
@@ -2355,16 +2355,16 @@ a.brand:hover {
   /*
     do we need this??
 
-    .popup .button-animated{
+    .popup .button-animated {
       padding: 7px 40px 8px 40px;
     }
 
-    .popup .button-animated:active:hover{
+    .popup .button-animated:active:hover {
       padding: 6px 41px 9px 39px;
     }
   */
 
-  .popup .button-animated:active:hover{
+  .popup .button-animated:active:hover {
     padding: 7px 41px 8px 39px;
   }
 }
