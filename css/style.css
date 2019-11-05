@@ -665,6 +665,8 @@ a.button-animated:active {
   padding: 44px 0 0 0;
 }
 
+
+
 .slider-advertisement-advertising-message::before {
   content: "";
 
@@ -678,6 +680,18 @@ a.button-animated:active {
 
 
   background: #ffffff;
+}
+
+.slider-advertisement-item-1 .slider-advertisement-text {
+  max-width: 490px;
+}
+
+.slider-advertisement-item-2 .slider-advertisement-text {
+  max-width: 450px;
+}
+
+.slider-advertisement-item-3 .slider-advertisement-text {
+  max-width: 460px;
 }
 
 .slider-advertisement-button {
@@ -1027,7 +1041,9 @@ a.popular-categories-link {
   background-position: 651px 18px;
 }
 
-
+.slider-services-item p {
+  max-width: 435px;
+}
 
 /* --- --- --- --- brands --- --- --- --- */
 
@@ -1100,6 +1116,11 @@ a.brand:hover {
 .info-blocks-item p {
   margin: 32px 0;
 }
+
+.info-blocks-item.about-us p {
+  max-width: 486px;
+}
+
 
 .info-blocks-list {
   list-style: none;
