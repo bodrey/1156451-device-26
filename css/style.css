@@ -929,7 +929,8 @@ a.popular-categories-link {
 .slider-services-controls-item {
   display: block;
   width: 160px;
-  padding: 8px 0 7px;
+  padding: 8px 0 7px 0;
+  margin-right: 117px;
   color: #000000;
 
   cursor: pointer;
@@ -954,10 +955,13 @@ a.popular-categories-link {
 }
 
 .slider-services-controls-item:active {
-  background-color: rgba(240,197,46,1);
-  color: rgba(0,0,0,0.3);
+  color: rgba(247,225,132,1);
+  background: #000000;
+  width: 277px;
+  margin-right: 0;
+  text-align: center;
+  padding-right: 117px;
 }
-
 
 /* --- --- --- --- services mechanics--- --- --- --- */
 
