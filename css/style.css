@@ -1323,12 +1323,6 @@ a.brand:hover {
   border-top: 2px solid #000000;
 }
 
-/*
-.form-catalog-filters-group:first-child legend {
-  margin-top: 70px;
-}
-*/
-
 .form-catalog-filters-group-list {
   list-style: none;
   padding: 0 0 0 0;
@@ -1446,9 +1440,30 @@ a.brand:hover {
   background-image: url("../img/checkbox-on.svg");
 }
 
-/*
-.checkbox:checked ~ .slider-services-controls li:nth-child(1) .slider-services-controls-item
- */
+.form-catalog-filters input[type=checkbox]:not([disabled]) ~ label:hover {
+  position: relative;
+
+  padding-left: 40px;
+  cursor: pointer;
+
+  opacity: 0.6;
+}
+
+.form-catalog-filters input[type=checkbox]:not([disabled]) ~ label:active {
+  opacity: 1;
+}
+
+.form-catalog-filters input[type=checkbox]:not([disabled]) ~ label:active::before {
+  background-image: url("../img/checkbox-on.svg");
+}
+
+.form-catalog-filters input[type=checkbox]:not([disabled]):checked ~ label:active::before {
+  background-image: url("../img/checkbox-off.svg");
+}
+
+.form-catalog-filters input[type=checkbox]:disabled ~ label {
+  opacity: 0.25;
+}
 
 /* --- --- --- --- form-catalog-filters radio --- --- --- --- */
 
@@ -1479,6 +1494,33 @@ a.brand:hover {
 
 .form-catalog-filters input[type=radio]:checked ~ label::before {
   background-image: url("../img/radio-on.svg");
+}
+
+
+
+.form-catalog-filters input[type=radio]:not([disabled]) ~ label:hover {
+  position: relative;
+
+  padding-left: 40px;
+  cursor: pointer;
+
+  opacity: 0.6;
+}
+
+.form-catalog-filters input[type=radio]:not([disabled]) ~ label:active {
+  opacity: 1;
+}
+
+.form-catalog-filters input[type=radio]:not([disabled]) ~ label:active::before {
+  background-image: url("../img/radio-on.svg");
+}
+
+.form-catalog-filters input[type=radio]:not([disabled]):checked ~ label:active::before {
+  background-image: url("../img/radio-off.svg");
+}
+
+.form-catalog-filters input[type=radio]:disabled ~ label {
+  opacity: 0.25;
 }
 
 /* --- --- --- --- form-catalog-filters button --- --- --- --- */
