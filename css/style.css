@@ -1505,9 +1505,11 @@ a.brand:hover {
 
 /* --- --- --- --- form-catalog-filters checkbox focus --- --- --- --- */
 
+/*
 .form-catalog-filters input[type=checkbox]:focus ~ label {
   outline: 2px solid rgba(240,197,46,1);
 }
+*/
 
 /* --- --- --- --- form-catalog-filters radio --- --- --- --- */
 
@@ -1567,9 +1569,11 @@ a.brand:hover {
 
 /* --- --- --- --- form-catalog-filters radio focus --- --- --- --- */
 
+/*
 .form-catalog-filters input[type=radio]:focus ~ label {
   outline: 2px solid rgba(240,197,46,1);
 }
+*/
 
 /* --- --- --- --- form-catalog-filters button --- --- --- --- */
 
