@@ -739,6 +739,11 @@ a.button-animated:active {
   margin-bottom: 20px;
 }
 
+.slider-advertisement-item-1 .slider-advertisement-product-features li:nth-child(2) {
+  min-width: 140px;
+  margin-bottom: 20px;
+}
+
 .slider-advertisement-product-features .single-feature {
   display: block;
   margin: 0 0 8px 0;
