@@ -265,6 +265,7 @@ a.button-animated:active {
 .search-input {
   display: inline-block;
   vertical-align: baseline;
+
   width: 210px;
   height: 49px;
 
@@ -288,9 +289,9 @@ a.button-animated:active {
 }
 
 .search-button {
-  display: inline-block;
+  display: none;
+  vertical-align: baseline;
 
-  visibility: hidden;
   cursor: pointer;
 
   font-family: "Open Sans light", Arial, sans-serif;
@@ -313,20 +314,19 @@ a.button-animated:active {
   background: transparent;
 
   padding: 9px 21px 10px 20px;
-  margin: 0;
+  margin: 0 0 0 146px;
 }
 
 .search-button:hover {
-  visibility: visible;
+  display: inline-block;
   background: #000000;
   color: rgba(255,255,255,1);
 }
 
-.search-button:active, .search-button:focus {
-  visibility: visible;
+.search-button:active {
+  display: inline-block;
   background: #000000;
   color: rgba(255,255,255,0.3);
-  margin-left: 146px;
 }
 
 /* --- --- --- --- user-navigation search mechanics --- --- --- --- */
@@ -354,8 +354,8 @@ a.button-animated:active {
 }
 
 .search-input:focus ~ .search-button {
-  visibility: visible;
-  vertical-align: baseline;
+  margin-left: 0;
+  display: inline-block;
 }
 
 /* --- --- --- --- user-navigation authorization --- --- --- --- */
@@ -800,11 +800,13 @@ a.button-animated:active {
   display: flex;
 }
 
+/*
 #slider-advertisement-item-1:focus ~ .slider-advertisement-controls,
 #slider-advertisement-item-2:focus ~ .slider-advertisement-controls,
 #slider-advertisement-item-3:focus ~ .slider-advertisement-controls {
   outline: 2px solid rgba(240,197,46,1);
 }
+*/
 
 /* --- --- --- --- advertisement slider current item styles --- --- --- --- */
 
@@ -1028,11 +1030,13 @@ a.popular-categories-link {
   display: block;
 }
 
+/*
 #slider-services-item-1:focus ~ .slider-services-controls,
 #slider-services-item-2:focus ~ .slider-services-controls,
 #slider-services-item-3:focus ~ .slider-services-controls {
   outline: 2px solid rgba(240,197,46,1);
 }
+*/
 
 /* --- --- --- --- services items --- --- --- --- */
 
