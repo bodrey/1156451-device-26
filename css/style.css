@@ -265,6 +265,7 @@ a.button-animated:active {
 .search-input {
   display: inline-block;
   vertical-align: baseline;
+  width: 210px;
   height: 49px;
 
   font-family: "Open Sans light", Arial, sans-serif;
@@ -287,7 +288,9 @@ a.button-animated:active {
 }
 
 .search-button {
-  display: none;
+  display: inline-block;
+
+  visibility: hidden;
   cursor: pointer;
 
   font-family: "Open Sans light", Arial, sans-serif;
@@ -314,12 +317,13 @@ a.button-animated:active {
 }
 
 .search-button:hover {
+  visibility: visible;
   background: #000000;
   color: rgba(255,255,255,1);
 }
 
-.search-button:active {
-  display: inline-block;
+.search-button:active, .search-button:focus {
+  visibility: visible;
   background: #000000;
   color: rgba(255,255,255,0.3);
   margin-left: 146px;
@@ -350,7 +354,7 @@ a.button-animated:active {
 }
 
 .search-input:focus ~ .search-button {
-  display: inline-block;
+  visibility: visible;
   vertical-align: baseline;
 }
 
@@ -796,6 +800,12 @@ a.button-animated:active {
   display: flex;
 }
 
+#slider-advertisement-item-1:focus ~ .slider-advertisement-controls,
+#slider-advertisement-item-2:focus ~ .slider-advertisement-controls,
+#slider-advertisement-item-3:focus ~ .slider-advertisement-controls {
+  outline: 2px solid rgba(240,197,46,1);
+}
+
 /* --- --- --- --- advertisement slider current item styles --- --- --- --- */
 
 .slider-advertisement-item:nth-child(1)::before {
@@ -1016,6 +1026,12 @@ a.popular-categories-link {
 #slider-services-item-2:checked ~ .slider-services-list .slider-services-item:nth-child(2),
 #slider-services-item-3:checked ~ .slider-services-list .slider-services-item:nth-child(3) {
   display: block;
+}
+
+#slider-services-item-1:focus ~ .slider-services-controls,
+#slider-services-item-2:focus ~ .slider-services-controls,
+#slider-services-item-3:focus ~ .slider-services-controls {
+  outline: 2px solid rgba(240,197,46,1);
 }
 
 /* --- --- --- --- services items --- --- --- --- */
@@ -1478,6 +1494,12 @@ a.brand:hover {
   opacity: 0.25;
 }
 
+/* --- --- --- --- form-catalog-filters checkbox focus --- --- --- --- */
+
+.form-catalog-filters input[type=checkbox]:focus ~ label {
+  outline: 2px solid rgba(240,197,46,1);
+}
+
 /* --- --- --- --- form-catalog-filters radio --- --- --- --- */
 
 .form-catalog-filters input[type=radio] ~ label {
@@ -1509,8 +1531,6 @@ a.brand:hover {
   background-image: url("../img/radio-on.svg");
 }
 
-
-
 .form-catalog-filters input[type=radio]:not([disabled]) ~ label:hover {
   position: relative;
 
@@ -1534,6 +1554,12 @@ a.brand:hover {
 
 .form-catalog-filters input[type=radio]:disabled ~ label {
   opacity: 0.25;
+}
+
+/* --- --- --- --- form-catalog-filters radio focus --- --- --- --- */
+
+.form-catalog-filters input[type=radio]:focus ~ label {
+  outline: 2px solid rgba(240,197,46,1);
 }
 
 /* --- --- --- --- form-catalog-filters button --- --- --- --- */
