@@ -2191,6 +2191,11 @@ a.brand:hover {
   text-align: right;
 }
 
+.footer-contacts-phone a, .footer-contacts-phone a:hover, .footer-contacts-phone a:active{
+  color: #ffffff;
+  opacity: 1;
+}
+
 .site-navigation.site-navigation-footer {
   margin-top: 5px;
   order: 0;
